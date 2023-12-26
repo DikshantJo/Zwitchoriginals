@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+// use Webkul\Razorpay\Providers\RazorpayServiceProvider;
+use Wontonee\Razorpay\Payment\Razorpay;
+use Wontonee\Razorpay\Providers\RazorpayServiceProvider;
 
 return [
     /*
@@ -223,6 +226,9 @@ return [
         Webkul\Tax\Providers\TaxServiceProvider::class,
         Webkul\Theme\Providers\ThemeServiceProvider::class,
         Webkul\User\Providers\UserServiceProvider::class,
+     
+        RazorpayServiceProvider::class
+
     ])->toArray(),
 
     /*

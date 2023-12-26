@@ -10,7 +10,7 @@
                 <p class="text-[16px] font-medium font-dmserif">Free Shipping</p>
 
                 <p class="text-[14px] font-medium mt-[10px] text-[#6E6E6E] max-w-[217px]">
-                    If goods have problems, Lorem Ipsum is dummy text
+                    If goods have problems, Lorem Ipsum is dummy text Shubham
                 </p>
             </div>
         </div>
