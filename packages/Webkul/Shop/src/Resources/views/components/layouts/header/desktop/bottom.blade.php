@@ -5,7 +5,7 @@
     --}}
     {{-- Left Nagivation Section --}}
     <div class="flex items-center gap-x-[40px] pt-[28px] max-[1180px]:gap-x-[20px]">
-        <a
+        <!-- <a
             href="{{ route('shop.home.index') }}"
             class="place-self-start -mt-[4px]"
             aria-label="Bagisto "
@@ -16,7 +16,7 @@
                 height="29"
                 alt="Bagisto"
             >
-        </a>
+        </a> -->
 
         <v-desktop-category>
             <div class="flex gap-[20px] items-center pb-[21px]">

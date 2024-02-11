@@ -5,6 +5,37 @@
     <meta name="keywords" content="@lang('shop::app.customers.login-form.page-title')"/>
 @endPush
 
+<style>
+    .brandLoginTitle {
+        font-family:'Mulish';
+        font-weight: 700;
+        font-size: 28px !important;
+        text-align:center;
+    }
+    .brandLoginDescription {
+        font-family:'Mulish';
+        text-align:center;
+    }
+    .imageContainer {
+        background-image: url('/themes/shop/default/build/assets/signInImageNew.png');
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .signInParent {
+        height: 100%;
+        width: 100%;
+        padding: 0 !important;
+        max-width:100%;
+    }
+
+    @media (max-width:1000px) {
+        .imageContainer {
+            display: none;
+        }
+    }
+</style>
+
 <x-shop::layouts
     :has-header="false"
     :has-feature="false"
@@ -15,7 +46,15 @@
         @lang('shop::app.customers.login-form.page-title')
     </x-slot>
 
-    <div class="container mt-20 max-1180:px-[20px]">
+    <div class="container flex signInParent" style='width:100%; max-width:100%; height:100%: padding:0'>
+
+        <div class='imageContainer'>
+
+        </div>
+        {{-- Form Container --}}
+        <div
+            class="w-full max-w-[595px] flex flex-col justify-center m-auto px-[30px] py-[60px] rounded-[12px] max-md:px-[30px] max-md:py-[30px] h-full" style="background:#fff;. border:none!"
+        >
         {{-- Company Logo --}}
         <div class="flex gap-x-[54px] items-center max-[1180px]:gap-x-[35px]">
             <a
@@ -31,22 +70,17 @@
                 >
             </a>
         </div>
-
-        {{-- Form Container --}}
-        <div
-            class="w-full max-w-[870px] m-auto px-[90px] py-[60px] border border-[#E9E9E9] rounded-[12px] max-md:px-[30px] max-md:py-[30px]"
-        >
-            <h1 class="text-[40px] font-dmserif max-sm:text-[25px]">
+            <h1 class="text-[40px] max-sm:text-[25px] brandLoginTitle">
                 @lang('shop::app.customers.login-form.page-title')
             </h1>
 
-            <p class="mt-[15px] text-[#6E6E6E] text-[20px] max-sm:text-[16px]">
+            <p class="mt-[5px] text-[#6E6E6E] text-[18px] max-sm:text-[14px] brandLoginDescription">
                 @lang('shop::app.customers.login-form.form-login-text')
             </p>
 
             {!! view_render_event('bagisto.shop.customers.login.before') !!}
 
-            <div class="mt-[60px] rounded max-sm:mt-[30px]">
+            <div class="mt-[30px] rounded max-sm:mt-[30px]">
                 <x-shop::form :action="route('shop.customer.session.create')">
 
                     {!! view_render_event('bagisto.shop.customers.login_form_controls.before') !!}
@@ -148,12 +182,12 @@
 
                         {!! view_render_event('bagisto.shop.customers.login.after') !!}
 
-                        {!! view_render_event('bagisto.shop.customers.login_form_controls.before') !!}
+                        <!-- {!! view_render_event('bagisto.shop.customers.login_form_controls.before') !!} -->
                     </div>
                 </x-shop::form>
             </div>
 
-            <p class="mt-[20px] text-[#6E6E6E] font-medium">
+            <p class="mt-[20px] text-[#6E6E6E] font-medium flex justify-between">
                 @lang('shop::app.customers.login-form.new-customer')
 
                 <a
@@ -165,9 +199,9 @@
             </p>
         </div>
 
-        <p class="mt-[30px] mb-[15px] text-center text-[#6E6E6E] text-xs">
+        <!-- <p class="mt-[30px] mb-[15px] text-center text-[#6E6E6E] text-xs">
             @lang('shop::app.customers.login-form.footer', ['current_year'=> date('Y') ])
-        </p>
+        </p> -->
     </div>
 
     @push('scripts')

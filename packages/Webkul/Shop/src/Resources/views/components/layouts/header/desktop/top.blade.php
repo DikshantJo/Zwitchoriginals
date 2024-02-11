@@ -1,7 +1,7 @@
 <div class="flex justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0">
     {{-- Currency Switcher --}}
-    <x-shop::dropdown>
-        <!-- Dropdown Toggler -->
+    <!-- <x-shop::dropdown>
+         Dropdown Toggler 
         <x-slot:toggle>
             <div class="flex gap-[10px] cursor-pointer">
                 <span>
@@ -10,15 +10,28 @@
 
                 <span class="text-[24px] icon-arrow-down"></span>
             </div>
-        </x-slot:toggle>
+        </x-slot:toggle> -->
 
-        <!-- Dropdown Content -->
+        <!-- Dropdown Content 
         <x-slot:content class="!p-[0px]">
             <v-currency-switcher></v-currency-switcher>
         </x-slot:content>
-    </x-shop::dropdown>
+    </x-shop::dropdown> -->
 
     <p class="text-xs font-medium">Get UPTO 40% OFF on your 1st order <a href="#" class="underline">SHOP NOW</a></p>
+
+        <a
+            href="{{ route('shop.home.index') }}"
+            class="place-self-start -mt-[4px]"
+            aria-label="Bagisto "
+        >
+            <img
+                src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
+                width="131"
+                height="29"
+                alt="Bagisto"
+            >
+        </a>
 
     {{-- Locales Switcher --}}
     <x-shop::dropdown position="bottom-right">

@@ -9,8 +9,8 @@
         <x-shop::breadcrumbs name="profile"></x-shop::breadcrumbs>
     @endSection
 
-    <div class="flex justify-between items-center">
-        <h2 class="text-[26px] font-medium">
+    <div class="flex justify-between items-start">
+        <h2 class="text-[24px] font-semibold">
             @lang('shop::app.customers.account.profile.title')
         </h2>
 
