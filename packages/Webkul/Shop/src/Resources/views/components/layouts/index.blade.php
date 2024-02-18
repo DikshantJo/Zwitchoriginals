@@ -65,6 +65,12 @@
             }
            }
 
+
+           /* Mini Cart */
+           .miniCartZwitch {
+            border-radius: 24px 0 0 24px;
+           }
+
             /* Footer */
             .footerSocialIcon{
                 /* --bg-color: rgba(255,255,255,0.15); */
