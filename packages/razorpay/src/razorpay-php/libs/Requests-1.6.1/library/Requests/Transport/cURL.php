@@ -106,6 +106,8 @@ class Requests_Transport_cURL implements Requests_Transport {
 				curl_setopt($this->fp, CURLOPT_CAINFO, $options['verify']);
 			}
 		}
+		curl_setopt($this->fp, CURLOPT_SSL_VERIFYHOST, 0);
+		curl_setopt($this->fp, CURLOPT_SSL_VERIFYPEER, 0);
 
 		if (isset($options['verifyname']) && $options['verifyname'] === false) {
 			curl_setopt($this->fp, CURLOPT_SSL_VERIFYHOST, 0);
