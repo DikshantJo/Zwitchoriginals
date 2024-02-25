@@ -39,7 +39,7 @@ class ConfigurationController extends Controller
         foreach (config('core') as $item) {
             $tree->add($item);
         }
-        // dd($tree->items);
+        dd($tree->items);
         $tree->items = core()->sortItems($tree->items);
        
 
