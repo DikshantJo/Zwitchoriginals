@@ -104,7 +104,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex gap-[20px] items-center flex-wrap">
+                            <div class="flex gap-[20px] items-center flex-wrap justify-between">
 
                                 <!-- Cart Item Quantity Changer -->
                                 <x-shop::quantity-changer

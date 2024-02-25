@@ -1,4 +1,4 @@
-<div class="flex justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0">
+<div class="flex justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0" style='background:#333; color: #fff;'>
     {{-- Currency Switcher --}}
     <!-- <x-shop::dropdown>
          Dropdown Toggler 
@@ -20,7 +20,7 @@
 
     <p class="text-xs font-medium">Get UPTO 40% OFF on your 1st order <a href="#" class="underline">SHOP NOW</a></p>
 
-        <a
+        <!-- <a
             href="{{ route('shop.home.index') }}"
             class="place-self-start -mt-[4px]"
             aria-label="Bagisto "
@@ -31,7 +31,7 @@
                 height="29"
                 alt="Bagisto"
             >
-        </a>
+        </a> -->
 
     {{-- Locales Switcher --}}
     <x-shop::dropdown position="bottom-right">
