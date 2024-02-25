@@ -35,7 +35,7 @@ class ConfigurationController extends Controller
     public function prepareConfigTree()
     {
         $tree = Tree::create();
-    //  dd(config('core'));
+      dd( $tree);
         foreach (config('core') as $item) {
             $tree->add($item);
         }
