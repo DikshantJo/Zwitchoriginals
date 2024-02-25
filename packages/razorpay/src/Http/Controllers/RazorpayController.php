@@ -116,7 +116,7 @@ class RazorpayController extends Controller
         $error = "Payment Failed";
 
         if (empty($request->input('razorpay_payment_id')) === false) {
-            $api = new Api(core()->getConfigData('sales.paymentmethods.razorpay.key_id'), core()->getConfigData('sales.paymentmethods.razorpay.secret'));
+            $api = new Api(core()->getConfigData('sales.payment_methods.razorpay.key_id'), core()->getConfigData('sales.payment_methods.razorpay.secret'));
             try {
                 // Please note that the razorpay order ID must
                 // come from a trusted source (session here, but
