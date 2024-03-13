@@ -142,7 +142,7 @@ class RazorpayController extends Controller
             Cart::deActivateCart();
             session()->flash('order', $order);
             // Order and prepare invoice
-            return redirect()->route('shop.checkout.success');
+            return redirect()->route('shop.checkout.onepage.success');
         } else {
             session()->flash('error', 'Razorpay payment either cancelled or transaction failure.');
             return redirect()->route('shop.checkout.cart.index');
