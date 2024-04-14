@@ -24,6 +24,7 @@
                 alt="Bagisto"
             >
         </a>
+
     </div>
 
     {{-- Right Nagivation Section --}}
