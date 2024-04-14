@@ -24,8 +24,9 @@
                 alt="Bagisto"
             >
         </a>
+
         <!-- <img
-                                src="{{ bagisto_asset('images/zwitch.gif') }}"
+                  src="{{ bagisto_asset('images/zwitch.gif') }}"
                                 alt="Bagisto"
                                 width="131"
                                 height="29"

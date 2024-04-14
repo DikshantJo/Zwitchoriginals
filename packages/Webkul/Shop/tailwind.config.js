@@ -36,6 +36,7 @@ module.exports = {
             fontFamily: {
                 poppins: ["Poppins"],
                 dmserif: ["DM Serif Display"],
+                mulish: ["Mulish"],
             },
         }
     },
