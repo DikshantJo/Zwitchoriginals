@@ -48,7 +48,7 @@
             {!! core()->getConfigData('general.content.custom_scripts.custom_css') !!}
             body {
                 font-family:'General Sans', sans-serif !important;
-                max-width:1680px !important;
+                /* max-width:1680px !important; */
                 margin:auto;
             }
             .featuresBladeIcon {
