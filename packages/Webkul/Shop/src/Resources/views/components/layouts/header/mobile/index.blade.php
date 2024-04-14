@@ -24,7 +24,7 @@
                     <div class="flex justify-between items-center">
                         <a href="{{ route('shop.home.index') }}">
                             <img
-                                src="{{ bagisto_asset('images/logo.svg') }}"
+                                src="{{ bagisto_asset('images/zwitch.gif') }}"
                                 alt="Bagisto"
                                 width="131"
                                 height="29"
