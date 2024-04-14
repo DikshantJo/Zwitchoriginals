@@ -12,11 +12,6 @@
                 <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
             </div>
         </v-desktop-category>
-        <img
-                                    src="{{ bagisto_asset('images/total-sales.svg')}}"
-                                    title="@lang('admin::app.dashboard.index.total-sales')"
-                                >
-
         <a
             href="{{ route('shop.home.index') }}"
             class="place-self-start -mt-[4px] businessLogo"
