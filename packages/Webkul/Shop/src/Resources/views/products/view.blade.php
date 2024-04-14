@@ -370,7 +370,7 @@
 
                                     <button
                                         type="submit"
-                                        class="secondary-button w-full max-w-full" style = 'background: #3e9bd8;color: #fff0000f;border: none;'
+                                        class="secondary-button w-full max-w-full" style = 'background: #3e9bd8;color: #fff;border: none;'
                                         {{ ! $product->isSaleable(1) ? 'disabled' : '' }}
                                     >
                                         @lang('shop::app.products.view.add-to-cart')
