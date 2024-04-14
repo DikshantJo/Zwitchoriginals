@@ -12,13 +12,25 @@
                 <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
             </div>
         </v-desktop-category>
-        <a
+        <!-- <a
             href="{{ route('shop.home.index') }}"
             class="place-self-start -mt-[4px] businessLogo"
             aria-label="Bagisto "
         >
             <img
                 src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
+                width="131"
+                height="29"
+                alt="Bagisto"
+            >
+        </a> -->
+        <a
+            href="{{ route('shop.home.index') }}"
+            class="place-self-start -mt-[4px] businessLogo"
+            aria-label="Bagisto "
+        >
+            <img
+                src="{{ bagisto_asset('images/zwitch.gif') }}"
                 width="131"
                 height="29"
                 alt="Bagisto"
