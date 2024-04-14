@@ -35,12 +35,13 @@ class ConfigurationController extends Controller
     public function prepareConfigTree()
     {
         $tree = Tree::create();
-
+    //  dd(config('core'));
         foreach (config('core') as $item) {
             $tree->add($item);
         }
-
+        // dd($tree->items);
         $tree->items = core()->sortItems($tree->items);
+       
 
         $this->configTree = $tree;
     }
@@ -56,13 +57,14 @@ class ConfigurationController extends Controller
             $this->configTree->items,
             request()->route('slug') . '.children.' . request()->route('slug2') . '.children'
         );
-
+        
         if ($groups) {
             return view('admin::configuration.edit', [
                 'config' => $this->configTree,
                 'groups' => $groups,
             ]);
         }
+
 
         return view('admin::configuration.index', ['config' => $this->configTree]);
     }
@@ -75,7 +77,7 @@ class ConfigurationController extends Controller
     public function store(ConfigurationForm $request)
     {
         $data = $request->request->all();
-
+       
         if (isset($data['sales']['carriers'])) {
             $atLeastOneCarrierEnabled = false;
 

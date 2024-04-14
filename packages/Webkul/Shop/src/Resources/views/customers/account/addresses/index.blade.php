@@ -67,7 +67,7 @@
                                         <x-shop::form
                                             :action="route('shop.customers.account.addresses.delete', $address->id)"
                                             method="DELETE"
-                                            id="addressDelete"
+                                            id="addressDelete" class='mb-0'
                                         >
                                             <a 
                                                 onclick="event.preventDefault(); document.getElementById('addressDelete').submit();"
@@ -83,7 +83,7 @@
                                     <x-shop::dropdown.menu.item>
                                         <x-shop::form
                                             :action="route('shop.customers.account.addresses.update.default', $address->id)"
-                                            method="PATCH"
+                                            method="PATCH" class='mb-0'
                                         >
                                             <button>
                                                 @lang('shop::app.customers.account.addresses.set-as-default')
