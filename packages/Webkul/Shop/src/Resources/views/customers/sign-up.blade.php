@@ -5,6 +5,52 @@
     <meta name="keywords" content="@lang('shop::app.customers.signup-form.page-title')"/>
 @endPush
 
+
+<style>
+    .brandLoginTitle {
+        font-family:'Mulish';
+        font-weight: 700;
+        font-size: 28px !important;
+        text-align:center;
+    }
+    .brandLoginDescription {
+        font-family:'Mulish';
+        text-align:center;
+    }
+    .imageContainer {
+        background-image: url('/themes/shop/default/build/assets/signInImageNew.png');
+        width: 40%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .signInParent {
+        height: 100%;
+        width: 100%;
+        padding: 0 !important;
+        max-width:100%;
+    }
+    .FormContainer {
+        width: 60%;
+        max-width: 100%;
+        padding: 0 !important;
+        margin: 0 auto;
+        height: 100%;
+        padding:50px 150px !important;
+    }
+    .signUpParentContainer {
+        max-width:100% !important;
+    }
+
+    @media (max-width:1000px) {
+        .imageContainer {
+            display: none;
+        }
+        .FormContainer {
+            padding: 75px !important;
+        }
+    }
+</style>
+
 <x-shop::layouts
     :has-header="false"
     :has-feature="false"
@@ -15,7 +61,14 @@
         @lang('shop::app.customers.signup-form.page-title')
     </x-slot>
 
-	<div class="container mt-20 max-1180:px-[20px]">
+	<div class="container flex signUpParentContainer" style='width:100%; padding:0; margin:0'>
+        <div class='imageContainer'>
+
+        </div>
+        {{-- Form Container --}}
+		<div
+			class="FormContainer m-auto px-[30px] py-[30px] border border-[#E9E9E9] rounded-[12px] max-md:py-[30px] "
+        >
         {{-- Company Logo --}}
         <div class="flex gap-x-[54px] items-center max-[1180px]:gap-x-[35px]">
             <a
@@ -32,11 +85,7 @@
             </a>
         </div>
 
-        {{-- Form Container --}}
-		<div
-			class="w-full max-w-[870px] m-auto px-[90px] py-[60px] border border-[#E9E9E9] rounded-[12px] max-md:px-[30px] max-md:py-[30px]"
-        >
-			<h1 class="text-[40px] font-dmserif max-sm:text-[25px]">
+			<h1 class="text-[40px] font-mulish max-sm:text-[25px]">
                 @lang('shop::app.customers.signup-form.page-title')
             </h1>
 
@@ -231,9 +280,9 @@
             </p>
 		</div>
 
-        <p class="mt-[30px] mb-[15px] text-center text-[#6E6E6E] text-xs">
+        <!-- <p class="mt-[30px] mb-[15px] text-center text-[#6E6E6E] text-xs">
             @lang('shop::app.customers.signup-form.footer', ['current_year'=> date('Y') ])
-        </p>
+        </p> -->
 	</div>
 
     @push('scripts')
