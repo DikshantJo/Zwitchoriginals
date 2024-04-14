@@ -24,12 +24,12 @@
                 alt="Bagisto"
             >
         </a>
-        <img
+        <!-- <img
                                 src="{{ bagisto_asset('images/zwitch.gif') }}"
                                 alt="Bagisto"
                                 width="131"
                                 height="29"
-                            >
+                            > -->
     </div>
 
     {{-- Right Nagivation Section --}}
