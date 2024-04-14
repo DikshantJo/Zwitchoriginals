@@ -25,7 +25,7 @@
             >
         </a>
         <img
-                                src="{{ bagisto_asset('images/logo.svg') }}"
+                                src="{{ bagisto_asset('images/wishlist.png') }}"
                                 alt="Bagisto"
                                 width="131"
                                 height="29"
