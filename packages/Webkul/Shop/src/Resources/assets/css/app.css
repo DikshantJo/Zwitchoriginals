@@ -339,9 +339,9 @@
         background-position-y: 50%;
     }
 
-    * {
+    /* * {
         @apply box-border font-poppins;
-    }
+    } */
 
     .scrollbar-hide::-webkit-scrollbar {
         display: none;

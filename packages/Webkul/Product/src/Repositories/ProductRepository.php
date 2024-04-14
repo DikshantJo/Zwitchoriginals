@@ -268,6 +268,7 @@ class ProductRepository extends Repository
                 'status',
                 'visible_individually',
                 'url_key',
+                'subscribers_only'
             ]);
 
             /**

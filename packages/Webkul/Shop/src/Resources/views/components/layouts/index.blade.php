@@ -61,7 +61,7 @@
             @media (min-width:1320px){
             .carouselImageShadow, .carouselImage {
                 width: 100%;
-                height: 100vh;
+                /* height: 100vh; */
             }
            }
 
@@ -98,6 +98,14 @@
                 text-decoration: none;
                 transition: all 0.3s ease;
             }
+            .businessLogo {
+                position: absolute;
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+                z-index: 999;
+            }
+
         </style>
 
         {!! view_render_event('bagisto.shop.layout.head') !!}
