@@ -18,7 +18,7 @@
 
 <div class="panel-side grid grid-cols-[1fr] gap-[30px] max-w-[380px] max-h-[1320px] overflow-y-auto overflow-x-hidden journal-scroll min-w-[342px] max-xl:min-w-[270px] max-md:max-w-full">
     {{-- Account Profile Hero Section --}}
-    <div class="grid grid-cols-[auto_1fr] gap-[15px] items-center px-[20px] py-[25px] border border-[#E9E9E9] rounded-[12px]">
+    <!-- <div class="grid grid-cols-[auto_1fr] gap-[15px] items-center px-[20px] py-[25px] border border-[#E9E9E9] rounded-[12px]">
         <div class="">
             <img
                 src="{{ $customer->image_url ??  bagisto_asset('images/user-placeholder.png') }}"
@@ -28,11 +28,11 @@
         </div>
 
         <div class="flex flex-col justify-between">
-            <p class="text-[25px] font-mediums">Hello! {{ $customer->first_name }}</p>
+            <p class="text-[25px] font-semibold">Hello! {{ $customer->first_name }}</p>
 
             <p class="text-[#6E6E6E] ">{{ $customer->email }}</p>
         </div>
-    </div>
+    </div> -->
 
     {{-- Account Navigation Menus --}}
     @foreach ($menu->items as $menuItem)
@@ -40,7 +40,7 @@
             <v-account-navigation>
                 {{-- Account Navigation Toggler --}}
                 <div class="max-md:flex max-md:gap-x-[15px] max-md:justify-between max-md:items-center pb-[20px] max-md:bg-gray-200 max-md:px-[25px] max-md:py-[20px] max-md:rounded-tl-[6px] max-md:rounded-tr-[6px] accordian-toggle md:pointer-events-none select-none">
-                    <p class="text-[20px] md:font-medium">@lang($menuItem['name'])</p>
+                    <p class="text-[20px] font-semibold">@lang($menuItem['name'])</p>
 
                     <span class="icon-arrow-right text-[24px] md:hidden"></span>
                 </div>
@@ -56,7 +56,7 @@
                     @foreach ($menuItem['children'] as $subMenuItem)
                         <a href="{{ $subMenuItem['url'] }}">
                             <div class="flex justify-between px-[25px] py-[20px] border-t-[1px] border-[#E9E9E9] hover:bg-[#f3f4f682] cursor-pointer {{ request()->routeIs($subMenuItem['route']) ? 'bg-gray-100' : '' }}">
-                                <p class="flex gap-x-[15px] items-center text-[18px] font-medium">
+                                <p class="flex gap-x-[15px] items-center text-[16px] font-medium">
                                     <span class="{{ $subMenuItem['icon'] }}  text-[24px]"></span>
 
                                     @lang($subMenuItem['name'])

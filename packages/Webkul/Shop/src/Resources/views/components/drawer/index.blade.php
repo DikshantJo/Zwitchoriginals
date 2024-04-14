@@ -78,7 +78,7 @@
                 :leave-to-class="enterFromLeaveToClasses"
             >
                 <div
-                    class="fixed z-[1000] bg-white overflow-hidden max-sm:!w-full"
+                    class="fixed z-[1000] bg-white overflow-hidden max-sm:!w-full miniCartZwitch"
                     :class="{
                         'inset-x-0 top-0': position == 'top',
                         'inset-x-0 bottom-0': position == 'bottom',
@@ -88,7 +88,7 @@
                     :style="'width:' + width"
                     v-show="isOpen"
                 >
-                    <div class="w-full h-full overflow-auto bg-white pointer-events-auto">
+                    <div class="w-full h-full overflow-auto bg-white pointer-events-auto" style='border-radius: 24px 0 0 24px'>
                         <div class="flex flex-col h-full w-full">
                             <div class="flex-1 min-h-0 min-w-0 overflow-auto">
                                 <div class="flex flex-col h-full">

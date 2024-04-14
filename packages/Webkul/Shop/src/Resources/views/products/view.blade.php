@@ -54,7 +54,7 @@
     {!! view_render_event('bagisto.shop.products.view.before', ['product' => $product]) !!}
 
     {{-- Breadcrumbs --}}
-    <div class="flex justify-center max-lg:hidden">
+    <div class="flex justify-center max-lg:hidden mt-[40px]">
         <x-shop::breadcrumbs name="product" :entity="$product"></x-shop::breadcrumbs>
     </div>
 
@@ -334,7 +334,7 @@
 
                                 {!! view_render_event('bagisto.shop.products.short_description.before', ['product' => $product]) !!}
 
-                                <p class="mt-[25px] text-[18px] text-[#6E6E6E] max-sm:text-[14px] max-sm:mt-[15px]">
+                                <p class="mt-[25px] text-[16px] text-[#6E6E6E] max-sm:text-[14px] max-sm:mt-[15px]" style='line-height:32px;'>
                                     {!! $product->short_description !!}
                                 </p>
 
@@ -370,7 +370,7 @@
 
                                     <button
                                         type="submit"
-                                        class="secondary-button w-full max-w-full"
+                                        class="secondary-button w-full max-w-full" style = 'background: #3e9bd8;color: #fff0000f;border: none;'
                                         {{ ! $product->isSaleable(1) ? 'disabled' : '' }}
                                     >
                                         @lang('shop::app.products.view.add-to-cart')

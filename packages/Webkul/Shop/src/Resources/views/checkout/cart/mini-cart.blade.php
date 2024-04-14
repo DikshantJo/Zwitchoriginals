@@ -23,12 +23,12 @@
             <!-- Drawer Header -->
             <x-slot:header>
                 <div class="flex justify-between items-center">
-                    <p class="text-[26px] font-medium">
+                    <p class="text-[26px] font-semibold">
                         @lang('shop::app.checkout.cart.mini-cart.shopping-cart')
                     </p>
                 </div>
 
-                <p class="text-[16px]">
+                <p class="text-[16px]" style= 'color: #777 '>
                     @lang('shop::app.checkout.cart.mini-cart.offer-on-orders')
                 </p>
             </x-slot:header>
@@ -37,11 +37,11 @@
             <x-slot:content>
                 <!-- Cart Item Listing -->
                 <div 
-                    class="grid gap-[50px] mt-[35px]" 
+                    class="grid gap-[30px] mt-[35px]" 
                     v-if="cart?.items?.length"
                 >
                     <div 
-                        class="flex gap-x-[20px]" 
+                        class="flex gap-x-[20px] p-[20px]" style = 'padding-bottom: 40px; border-bottom: 1px solid #ddd'
                         v-for="item in cart?.items"
                     >
                         <!-- Cart Item Image -->
@@ -53,7 +53,7 @@
                         </div>
 
                         <!-- Cart Item Information -->
-                        <div class="grid flex-1 gap-y-[10px] place-content-start justify-stretch">
+                        <div class="flex flex-col justify-between flex-1 gap-y-[10px] place-content-start">
                             <div class="flex flex-wrap justify-between">
                                 
                                 <p
@@ -104,7 +104,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex gap-[20px] items-center flex-wrap">
+                            <div class="flex gap-[20px] items-center flex-wrap justify-between">
 
                                 <!-- Cart Item Quantity Changer -->
                                 <x-shop::quantity-changer

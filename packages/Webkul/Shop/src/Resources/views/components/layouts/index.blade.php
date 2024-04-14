@@ -105,6 +105,7 @@
                 transform:translate(-50%,-50%);
                 z-index: 999;
             }
+
         </style>
 
         {!! view_render_event('bagisto.shop.layout.head') !!}
