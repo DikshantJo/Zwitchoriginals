@@ -49,6 +49,16 @@
             padding: 75px !important;
         }
     }
+
+    @media (max-width:500px){
+        .FormContainer {
+            padding: 15px !important;
+            width: 90%;
+            border:none;
+            margin-top:40px !important;
+            margin-bottom: 40px !important
+        }
+    }
 </style>
 
 <x-shop::layouts
@@ -77,7 +87,7 @@
                 aria-label="Bagisto "
             >
                 <img
-                    src="{{ bagisto_asset('images/logo.svg') }}"
+                    src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
                     alt="Bagisto "
                     width="131"
                     height="29"
