@@ -10,13 +10,13 @@
 @pushOnce('scripts')
     <script type="text/x-template" id="v-image-search-template">
         <div>
-            <!-- <label
+            <label
                 class="icon-camera flex items-center absolute top-[10px] ltr:right-[12px] rtl:left-[12px] pr-3 text-[22px] cursor-pointer"
                 aria-label="Search"
                 for="v-image-search"
                 v-if="! isSearching"
             >
-            </label> -->
+            </label>
 
             <label
                 class="flex items-center absolute top-[10px] ltr:right-[12px] rtl:left-[12px] pr-3 text-[22px] cursor-pointer"
