@@ -24,6 +24,12 @@
                 alt="Bagisto"
             >
         </a>
+        <img
+                                src="{{ bagisto_asset('images/logo.svg') }}"
+                                alt="Bagisto"
+                                width="131"
+                                height="29"
+                            >
     </div>
 
     {{-- Right Nagivation Section --}}
