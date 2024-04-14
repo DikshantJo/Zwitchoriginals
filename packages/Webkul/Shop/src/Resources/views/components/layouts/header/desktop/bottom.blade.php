@@ -1,13 +1,20 @@
-<div class="w-full flex justify-between min-h-[78px] px-[60px] border border-t-0 border-b-[1px] border-l-0 border-r-0 max-1180:px-[30px]">
+<div class="w-full flex justify-between min-h-[78px] px-[60px] border border-t-0 border-b-[1px] border-l-0 border-r-0 max-1180:px-[30px] relative">
     {{--
         This section will provide categories for the first, second, and third levels. If
         additional levels are required, users can customize them according to their needs.
     --}}
     {{-- Left Nagivation Section --}}
     <div class="flex items-center gap-x-[40px] pt-[28px] max-[1180px]:gap-x-[20px]">
+        <v-desktop-category>
+            <div class="flex gap-[20px] items-center pb-[21px]">
+                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+            </div>
+        </v-desktop-category>
         <a
             href="{{ route('shop.home.index') }}"
-            class="place-self-start -mt-[4px]"
+            class="place-self-start -mt-[4px] businessLogo"
             aria-label="Bagisto "
         >
             <img
@@ -17,14 +24,6 @@
                 alt="Bagisto"
             >
         </a>
-
-        <v-desktop-category>
-            <div class="flex gap-[20px] items-center pb-[21px]">
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-            </div>
-        </v-desktop-category>
     </div>
 
     {{-- Right Nagivation Section --}}
