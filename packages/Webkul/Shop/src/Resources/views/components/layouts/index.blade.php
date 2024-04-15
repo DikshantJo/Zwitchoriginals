@@ -106,6 +106,17 @@
                 z-index: 999;
             }
 
+            @media(max-width:550px) {
+                .categorySliderParent,.categorySliderImg {
+                    width: 80px;
+                    height:80px;
+                }
+                .catergorySliderContainer {
+                    gap: 0;
+                    height: 120px;
+                }
+            }
+
         </style>
 
         {!! view_render_event('bagisto.shop.layout.head') !!}

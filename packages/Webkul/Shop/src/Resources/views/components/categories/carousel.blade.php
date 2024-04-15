@@ -18,12 +18,12 @@
                     class="flex gap-10 overflow-auto scroll-smooth scrollbar-hide max-sm:gap-4"
                 >
                     <div
-                        class="grid grid-cols-1 gap-[15px] justify-items-center min-w-[200px] max-w-[120px] font-medium"
+                        class="grid grid-cols-1 gap-[15px] justify-items-center min-w-[200px] max-w-[120px] font-medium catergorySliderContainer"
                         v-for="category in categories"
                     >
                         <a
                             :href="category.url_path"
-                            class="w-[110px] h-[110px] bg-[#F5F5F5] rounded-full"
+                            class="w-[110px] h-[110px] bg-[#F5F5F5] rounded-full categorySliderParent"
                             :aria-label="category.name"
                         >
                             <template v-if="category.images.logo_url">
@@ -31,7 +31,7 @@
                                     ::src="category.images.logo_url"
                                     width="110"
                                     height="110"
-                                    class="w-[110px] h-[110px] rounded-full"
+                                    class="w-[110px] h-[110px] rounded-full categorySliderImg"
                                     ::alt="category.name"
                                 ></x-shop::media.images.lazy>
                             </template>
@@ -42,7 +42,7 @@
                             class=""
                         >
                             <p
-                                class="text-center text-black text-[18px] max-sm:font-normal"
+                                class="text-center text-black md:text-[18px] max-sm:font-normal"
                                 v-text="category.name"
                             >
                             </p>
