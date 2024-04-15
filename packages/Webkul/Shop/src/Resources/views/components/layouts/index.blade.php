@@ -115,6 +115,17 @@
                     gap: 0;
                     height: 120px;
                 }
+                .categoryLeftArrow,.categoryRightArrow {
+                    width: 40px;
+                    height:40px;
+                    font-size:18px;
+                }
+                .categoryRightArrow {
+                    right: -45px !important;
+                }
+                .categoryLeftArrow {
+                    Left: -45px !important;
+                }
             }
 
         </style>
