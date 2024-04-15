@@ -11,7 +11,7 @@
 
 @pushOnce('scripts')
     <script type="text/x-template" id="v-categories-carousel-template">
-        <div class="container mt-[60px] max-lg:px-[30px] max-sm:mt-[20px]" v-if="! isLoading && categories?.length">
+        <div class="container mt-[60px] max-lg:px-[30px] max-sm:mt-[20px] flex justify-center items-center" v-if="! isLoading && categories?.length">
             <div class="relative">
                 <div
                     ref="swiperContainer"
@@ -51,13 +51,13 @@
                 </div>
 
                 <span
-                    class="flex items-center justify-center absolute top-[37px] -left-[41px] w-[50px] h-[50px] bg-white border border-black rounded-full transition icon-arrow-left-stylish text-[25px] hover:bg-black hover:text-white max-lg:-left-[29px] cursor-pointer" style='left:-65px'
+                    class="flex items-center justify-center absolute top-[37px] -left-[41px] w-[50px] h-[50px] bg-white border border-black rounded-full transition icon-arrow-left-stylish text-[25px] hover:bg-black hover:text-white max-lg:-left-[29px] cursor-pointer categoryLeftArrow" style='left:-65px'
                     @click="swipeLeft"
                 >
                 </span>
 
                 <span
-                    class="flex items-center justify-center absolute top-[37px] -right-[22px] w-[50px] h-[50px] bg-white border border-black rounded-full transition icon-arrow-right-stylish text-[25px] hover:bg-black hover:text-white max-lg:-right-[29px] cursor-pointer" style='right:-65px'
+                    class="flex items-center justify-center absolute top-[37px] -right-[22px] w-[50px] h-[50px] bg-white border border-black rounded-full transition icon-arrow-right-stylish text-[25px] hover:bg-black hover:text-white max-lg:-right-[29px] cursor-pointer categoryRightArrow" style='right:-65px'
                     @click="swipeRight"
                 >
                 </span>
