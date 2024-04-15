@@ -67,9 +67,9 @@
 
 
            /* Mini Cart */
-           .miniCartZwitch {
+           /* .miniCartZwitch {
             border-radius: 24px 0 0 24px;
-           }
+           } */
 
             /* Footer */
             .footerSocialIcon{
