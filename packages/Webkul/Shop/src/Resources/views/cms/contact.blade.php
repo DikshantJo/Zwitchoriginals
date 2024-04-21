@@ -98,11 +98,16 @@
     .ContactUsPrimary {
       width: 100%;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
 
     .ContactUsPrimary h1 {
-      font-size: 64px;
+      font-size: 74px;
       color: #fff;
+      font-weight: 600;
     }
 
     .ContactUsPrimary p {
@@ -561,7 +566,7 @@ body {
 <x-shop::layouts>
 
     <div class="displayFlex contactUsParent">
-        <div class="" style="width: 100%;">
+        <div class="" style="width: 100%;display:flex; justify-content:center;align-items:center;">
           <div class="ContactUsPrimary">
             <h1> Contact us</h1>
             <div style="margin-top: 0px;">
@@ -586,7 +591,7 @@ body {
                     </div>
                 </div> -->
     
-          <div class="displayFlex ContactUsSubContainer" style="flex-wrap: nowrap;">
+          <div class="displayFlex ContactUsSubContainer" style="flex-wrap: nowrap; display:none">
             <div class="card">
               <div class="card-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection"
