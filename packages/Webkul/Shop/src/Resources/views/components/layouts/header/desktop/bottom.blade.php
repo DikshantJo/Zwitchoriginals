@@ -18,7 +18,7 @@
             aria-label="Bagisto "
         >
             <img
-                src="https://zwitchoriginals.com//storage/channel/1/zwitch.gif"
+                src="https://zwitchoriginals.com//storage/channel/1/NewLogo.gif"
                 width="131"
                 height="29"
                 alt="Bagisto"
