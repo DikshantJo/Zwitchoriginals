@@ -22,13 +22,13 @@
 
 
 <footer class="mt-[36px]  max-sm:mt-[30px] zwitchoriginalsFooter flex justify-center items-center flex-col relative" style="background:#1a1a1a; min-height:70vh;border-radius:  24px 24px 0 0">
-    <div class="mt-20 max-lg:px-[30px] max-sm:mt-[30px]" style='margin-bottom: 60px;'>
+    <div class="container max-lg:px-[30px] max-sm:mt-[30px]" style = 'margin-top:20px'>
         <div class="flex gap-[25px] justify-between max-lg:flex-wrap" style='border-radius: 12px;padding: 30px;'>
             <div class="flex flex-col items-start justify-center gap-[20px]">
                 <span class="icon-truck flex items-center justify-center w-[60px] h-[60px] bg-white border border-black rounded-full text-[42px] text-navyBlue p-[10px] featuresBladeIcon"></span>
 
                 <div class="">
-                    <p class="text-[16px] font-semibold" style='font-size:24px; color:#fff'>customization available</p>
+                    <p class="text-[16px] font-semibold font-dmserif" style='font-size:24px; color:#fff'>customization available</p>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
     </div>
 
     @if ($customization)
-        <div class="flex gap-x-[25px] gap-y-[30px] justify-between p-[60px] max-1060:flex-wrap max-1060:flex-col-reverse max-sm:px-[15px]" style="max-width:1440px; width:85%">
+        <div class="flex gap-x-[25px] gap-y-[30px] justify-between p-[60px] max-1060:flex-wrap max-1060:flex-col-reverse max-sm:px-[15px]" style="max-width:1440px; width:85%; padding-top:20px">
             <div class='flex flex-col'>
                 <h3 class="zwitchFooterTitleLeft" style='font-size:34px;font-weight:600;color:#fff'>Get the latest from Zwitch</h3>
                 <div class = "zwitchFooterSocial flex gap-x-[10px] mt-4">
