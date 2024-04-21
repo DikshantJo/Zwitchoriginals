@@ -633,15 +633,6 @@ body {
           </div>
         </div>
       </div>
-    
-      <div
-        style="background: url('./t.jpg'); height: 50vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-size: cover;">
-        <h2 style="color: white; margin-bottom: 20px;">Connect with us here</h2>
-        <button style="padding: 10px 20px; font-size: 16px;border-radius: 50px; border: none; font-weight: 500;">Click
-          Me</button>
-      </div>
-    
-    
       <div class="" style="margin-top: 10vh;">
         <div class="container">
           <!-- <h2 class="faq-title">FAQs</h2> -->
@@ -885,7 +876,13 @@ body {
           </div>
         </div>
       </div>
-    
+          
+      <div
+        style="background: url('./t.jpg'); height: 50vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-size: cover;">
+        <h2 style="color: white; margin-bottom: 20px;">Connect with us here</h2>
+        <button style="padding: 10px 20px; font-size: 16px;border-radius: 50px; border: none; font-weight: 500;">Click
+          Me</button>
+      </div>
       <script>
         //         const items = document.querySelectorAll(".accordion button");
     
