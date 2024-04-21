@@ -878,7 +878,7 @@ body {
       </div>
           
       <div
-        style="background: url('./t.jpg'); height: 50vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-size: cover;">
+        style="background: url('https://zwitchoriginals.com//storage/channel/1/t.jpg'); height: 50vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-size: cover;">
         <h2 style="color: white; margin-bottom: 20px;">Connect with us here</h2>
         <button style="padding: 10px 20px; font-size: 16px;border-radius: 50px; border: none; font-weight: 500;">Click
           Me</button>
