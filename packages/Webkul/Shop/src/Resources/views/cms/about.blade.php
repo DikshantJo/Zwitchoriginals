@@ -244,7 +244,7 @@
             width: 100%;
         }
         .container {
-            padding: 10px;
+            padding: 10px !important;
         }
         .page-title-secondary {
             font-size:24px;
