@@ -55,6 +55,7 @@
                 background:'f2f2f2';
                 border:none;
                 border-radius:6px;
+                display:none;
             }
 
             /* Carousel */
