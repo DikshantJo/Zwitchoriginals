@@ -243,6 +243,12 @@
         .content__text {
             width: 100%;
         }
+        .container {
+            padding: 10px;
+        }
+        .page-title-secondary {
+            font-size:24px;
+        }
     }
 </style>
 {{-- Page Layout --}}
