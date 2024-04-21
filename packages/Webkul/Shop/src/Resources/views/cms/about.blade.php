@@ -293,6 +293,82 @@
         </main>
     </div>
 
+    <div class="container" style="background-color: #fff;">
+        <main>
+            <h1 class="page-title-secondary">Our Mission:</h1>
+            <article class="content">
+                <section class="content__descriptor content__descriptor_secondary">
+                    <h2 class="content__title">Info</h2>
+                </section>
+                <section class="content__text-box content__text-box_secondary">
+                    <p class="content__text content__text_secondary">
+                    Our mission is simple: To provide T-shirts that define personalities and make you stand out from the crowd. 
+                    </p>
+                    <p class="content__text content__text_secondary">
+                    We empower individuals to express their unique style & confidence through our collection of cool, bold, and vibrant design t-shirts. We understand that every individual is different, which is why we offer a diverse range of categories tailored to various interests and passions. From anime-inspired graphics to designs for football lovers, we aim to offer something for everyone.
+                    </p>
+                </section>
+            </article>
+        </main>
+    </div>
+    <div class="container" style="background-color: #fff;">
+        <main>
+            <h1 class="page-title-secondary">Customization:</h1>
+            <article class="content">
+                <section class="content__descriptor content__descriptor_secondary">
+                    <h2 class="content__title">Info</h2>
+                </section>
+                <section class="content__text-box content__text-box_secondary">
+                    <p class="content__text content__text_secondary">
+                    At Zwitch Originals, we go beyond off-the-shelf options. We offer customization services where we collaborate with clients to bring their visions to life.
+                    </p>
+                    <p class="content__text content__text_secondary">
+                    Our team works closely with each customer to understand their preferences and create a bespoke artwork that reflects their style. Please refer to our terms and conditions related to customisation.
+                    </p>
+                </section>
+            </article>
+        </main>
+    </div>
+    <div class="container" style="background-color: #fff;">
+        <main>
+            <h1 class="page-title-secondary">Our Promise:</h1>
+            <article class="content">
+                <section class="content__descriptor content__descriptor_secondary">
+                    <h2 class="content__title">Info</h2>
+                </section>
+                <section class="content__text-box content__text-box_secondary">
+                    <p class="content__text content__text_secondary">
+                        We aspire to be the premier customization apparel brand pan India. 
+                    </p>
+                    <p class="content__text content__text_secondary">
+                        Our goal is to provide a diverse, trendy, and effortlessly cool T-shirt collection that caters to every occupation and passion. With Zwitch Originals, you can say goodbye to ordinary T-shirts and hello to individuality.
+                    </p>
+                </section>
+            </article>
+        </main>
+    </div>
+    <div class="container" style="background-color: #fff;">
+        <main>
+            <h1 class="page-title-secondary">About Us</h1>
+            <article class="content">
+                <section class="content__descriptor content__descriptor_secondary">
+                    <h2 class="content__title">Info</h2>
+                </section>
+                <section class="content__text-box content__text-box_secondary">
+                    <p class="content__text content__text_secondary">
+                        We aim to be the investors we wished we had when we started out.
+                        Lightning-fast, always on your side and fundamentally helpful.
+                    </p>
+                    <p class="content__text content__text_secondary">
+                        Our knowledge is your knowledge. Our network is your network. Your
+                        problems are our problems. We don't have all the answers, but we
+                        will help you find them.
+                    </p>
+                </section>
+            </article>
+        </main>
+    </div>
+
     <div style="background-color: #c2edfe;">
 
     </div>
