@@ -59,7 +59,7 @@
     </div>
 
     @if ($customization)
-        <div class="flex gap-x-[25px] gap-y-[30px] justify-between p-[60px] max-1060:flex-wrap max-1060:flex-col-reverse max-sm:px-[15px]" style="max-width:1440px; width:85%; padding-top:20px">
+        <div class="flex gap-x-[25px] gap-y-[30px] justify-between p-[60px] max-1060:flex-wrap max-1060:flex-col-reverse max-sm:px-[15px]" style="max-width:1440px; width:85%; padding-top:20px;margin-bottom:20px">
             <div class='flex flex-col'>
                 <h3 class="zwitchFooterTitleLeft" style='font-size:34px;font-weight:600;color:#fff'>Get the latest from Zwitch</h3>
                 <div class = "zwitchFooterSocial flex gap-x-[10px] mt-4">
