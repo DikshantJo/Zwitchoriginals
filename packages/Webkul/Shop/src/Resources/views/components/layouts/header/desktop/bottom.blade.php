@@ -66,7 +66,7 @@
             @if(core()->getConfigData('general.content.shop.compare_option'))
                 <a
                     href="{{ route('shop.compare.index') }}"
-                    aria-label="Compare"
+                    aria-label="Compare" title="Compare products"
                 >
                     <span class="icon-compare inline-block text-[24px] cursor-pointer"></span>
                 </a>
