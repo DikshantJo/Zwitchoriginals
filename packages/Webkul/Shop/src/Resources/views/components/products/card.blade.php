@@ -56,6 +56,7 @@
                             <span
                                 class="icon-compare flex justify-center items-center w-[30px] h-[30px] absolute top-[60px] right-[20px] bg-white rounded-md cursor-pointer text-[25px]"
                                 @click="addToCompare(product.id)"
+                                title="Compare products"
                             >
                             </span>
                         @endif
