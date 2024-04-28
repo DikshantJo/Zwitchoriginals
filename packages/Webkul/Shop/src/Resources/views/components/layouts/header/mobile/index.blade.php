@@ -21,12 +21,12 @@
                 </x-slot:toggle>
 
                 <x-slot:header>
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
                         <a href="{{ route('shop.home.index') }}">
                             <img
                                 src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
                                 alt="Bagisto"
-                                width="131"
+                                width="100"
                                 height="29"
                             >
                         </a>
