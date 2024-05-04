@@ -122,7 +122,7 @@
 
             <a
                 href="{{ route('shop.home.index') }}"
-                class="max-h-[30px]"
+                class="max-h-[80px] h-[80px] w-[80px]"
                 aria-label="Bagisto"
             >
                 <img

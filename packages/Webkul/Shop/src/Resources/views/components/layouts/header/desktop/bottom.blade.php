@@ -15,10 +15,10 @@
         <a
             href="{{ route('shop.home.index') }}"
             class="place-self-start -mt-[4px] businessLogo"
-            aria-label="Bagisto "
+            aria-label="Bagisto"
         >
             <img
-                src="https://zwitchoriginals.com//storage/channel/1/NewLogo.gif"
+                src="https://zwitchoriginals.com//storage/channel/1/FinalZwitch.gif"
                 width="131"
                 height="29"
                 alt="Bagisto"
