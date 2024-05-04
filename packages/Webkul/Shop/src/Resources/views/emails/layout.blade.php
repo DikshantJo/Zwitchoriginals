@@ -13,7 +13,7 @@
         <div style="max-width: 640px; margin-left: auto; margin-right: auto;">
             <div style="padding: 30px;">
                 {{-- Email Header --}}
-                <div style="margin-bottom: 65px;">
+                <div style="margin-bottom: 0px;">
                     <a href="{{ route('shop.home.index') }}">
                         @if ($logo = core()->getCurrentChannel()->logo_url)
                             <img
