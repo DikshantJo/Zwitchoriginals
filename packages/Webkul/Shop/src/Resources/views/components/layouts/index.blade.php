@@ -68,9 +68,9 @@
 
 
            /* Mini Cart */
-           .miniCartZwitch {
+           /* .miniCartZwitch {
             border-radius: 24px 0 0 24px;
-           }
+           } */
 
             /* Footer */
             .footerSocialIcon{
@@ -105,6 +105,28 @@
                 top:50%;
                 transform:translate(-50%,-50%);
                 z-index: 999;
+            }
+
+            @media(max-width:550px) {
+                .categorySliderParent,.categorySliderImg {
+                    width: 80px;
+                    height:80px;
+                }
+                .catergorySliderContainer {
+                    gap: 0;
+                    height: 120px;
+                }
+                .categoryLeftArrow,.categoryRightArrow {
+                    width: 40px;
+                    height:40px;
+                    font-size:18px;
+                }
+                .categoryRightArrow {
+                    right: -45px !important;
+                }
+                .categoryLeftArrow {
+                    Left: -45px !important;
+                }
             }
 
         </style>
