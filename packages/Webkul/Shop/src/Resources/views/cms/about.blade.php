@@ -362,6 +362,11 @@ h2 {
     
 }
 
+.header h1 {
+    font-size:24px;
+    margin: 16px 0;
+}
+
     @media only screen and (max-width: 580px) {
         .content__text {
             width: 100%;
@@ -469,43 +474,36 @@ h2 {
             </article>
         </main>
     </div>
-    
-
-
-
-
 
     <div class="header">
-        <h1>Reliable, efficient delivery</h1>
-        <h1>Powered by Technology</h1>
-
-        <p>Our Artificial Intelligence powered tools use millions of project data points
-        to ensure that your project is successful</p>
+        <h1>Stylish, Seamless Shopping</h1>
+        <h1>Empowered by Innovation</h1>
+        <p>Our cutting-edge tools harness vast product insights, ensuring your shopping journey is seamless and satisfying.</p>
     </div>
     <div class="row1-container">
         <div class="box box-down cyan">
-        <h2>Supervisor</h2>
-        <p>Monitors activity to identify project roadblocks</p>
-        <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+            <h2>Free shipping</h2>
+            <p>Enjoy complimentary shipping on all orders, no minimum purchase required.</p>
+            <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
         </div>
 
         <div class="box red">
-        <h2>Team Builder</h2>
-        <p>Scans our talent network to create the optimal team for your project</p>
-        <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+            <h2>Quality products</h2>
+            <p>Discover top-notch products crafted with precision and care for unparalleled quality.</p>
+            <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
         </div>
 
         <div class="box box-down blue">
-        <h2>Calculator</h2>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+            <h2>Sustainable practise</h2>
+            <p>Embrace eco-friendly practices with our sustainable approach to production and sourcing.</p>
+            <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
         </div>
     </div>
     <div class="row2-container">
         <div class="box orange">
-        <h2>Karma</h2>
-        <p>Regularly evaluates our talent to ensure quality</p>
-        <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
+            <h2>24/7 support</h2>
+            <p>Get round-the-clock assistance from our dedicated support team, available whenever you need help.</p>
+            <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
         </div>
     </div>
 
