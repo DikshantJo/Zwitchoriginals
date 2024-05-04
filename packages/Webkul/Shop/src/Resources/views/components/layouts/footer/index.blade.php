@@ -21,7 +21,7 @@
 
 
 
-<footer class="mt-[36px]  max-sm:mt-[30px] zwitchoriginalsFooter flex justify-center items-center flex-col relative" style="background:#1a1a1a; min-height:70vh;border-radius:  24px 24px 0 0">
+<footer class="mt-[36px]  max-sm:mt-[30px] zwitchoriginalsFooter flex justify-center items-center flex-col relative" style="background:#425661; min-height:70vh;border-radius:  24px 24px 0 0">
     <div class="container max-lg:px-[30px] max-sm:mt-[30px]" style = 'margin-top:20px'>
         <div class="flex gap-[25px] justify-between max-lg:flex-wrap" style='border-radius: 12px;padding: 30px;'>
             <div class="flex flex-col items-start justify-center gap-[20px]">
