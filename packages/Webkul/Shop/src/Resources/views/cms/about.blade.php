@@ -239,6 +239,129 @@
         color: #000;
     }
 
+    :root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+}
+
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+     
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}
+
     @media only screen and (max-width: 580px) {
         .content__text {
             width: 100%;
@@ -256,20 +379,19 @@
 
     <div class="container" style="margin-top: 45px;">
         <main>
-            <h1 class="page-title">About Us</h1>
+            <h1 class="page-title">Zwitch Originals</h1>
             <article class="content">
                 <section class="content__descriptor">
-                    <h2 class="content__title">Info</h2>
+                    <h2 class="content__title">About us</h2>
                 </section>
                 <section class="content__text-box">
                     <p class="content__text">
-                        We aim to be the investors we wished we had when we started out.
-                        Lightning-fast, always on your side and fundamentally helpful.
+                        Welcome to Zwitch Originals, where streetwear meets individuality. 
+                        We're more than thrilled to introduce you to a world of personalized fashion, where every garment tells a unique story.
                     </p>
                     <p class="content__text">
-                        Our knowledge is your knowledge. Our network is your network. Your
-                        problems are our problems. We don't have all the answers, but we
-                        will help you find them.
+                        As an emerging apparel brand, we specialize in crafting limited edition, high-quality T-shirts adorned with one-of-a-kind, modern, and captivating designs.
+                        Our journey begins with a passion for creativity, a commitment to quality, and a vision to redefine casual wear.
                     </p>
                 </section>
             </article>
@@ -279,20 +401,17 @@
 
     <div class="container" style="background-color: #fff;">
         <main>
-            <h1 class="page-title-secondary">About Us</h1>
+            <h1 class="page-title-secondary">Our Vision:</h1>
             <article class="content">
                 <section class="content__descriptor content__descriptor_secondary">
-                    <h2 class="content__title">Info</h2>
+                    <h2 class="content__title">Vision</h2>
                 </section>
                 <section class="content__text-box content__text-box_secondary">
                     <p class="content__text content__text_secondary">
-                        We aim to be the investors we wished we had when we started out.
-                        Lightning-fast, always on your side and fundamentally helpful.
+                        Our vision is to ignite individuality and creativity through our streetwear brand, crafting apparel that merges urban edge with timeless style. At Zwitch Originals, we believe that clothing is not just a garment; it should reflect your personality.
                     </p>
                     <p class="content__text content__text_secondary">
-                        Our knowledge is your knowledge. Our network is your network. Your
-                        problems are our problems. We don't have all the answers, but we
-                        will help you find them.
+                    We aim to empower our community to express themselves fearlessly, embrace diversity, and make a bold statement wherever they go. That's why we meticulously design artwork that resonates with each customer's unique identity. Whether you're an anime enthusiast, a music lover, an artist, or a sports fanatic, we have a design that speaks to you.
                     </p>
                 </section>
             </article>
@@ -308,10 +427,10 @@
                 </section>
                 <section class="content__text-box content__text-box_secondary">
                     <p class="content__text content__text_secondary">
-                    Our mission is simple: To provide T-shirts that define personalities and make you stand out from the crowd. 
+                        Our mission is simple: To provide T-shirts that define personalities and make you stand out from the crowd. We empower individuals to express their unique style & confidence through our collection of cool, bold, and vibrant design t-shirts.
                     </p>
                     <p class="content__text content__text_secondary">
-                    We empower individuals to express their unique style & confidence through our collection of cool, bold, and vibrant design t-shirts. We understand that every individual is different, which is why we offer a diverse range of categories tailored to various interests and passions. From anime-inspired graphics to designs for football lovers, we aim to offer something for everyone.
+                    We understand that every individual is different, which is why we offer a diverse range of categories tailored to various interests and passions. From anime-inspired graphics to designs for football lovers, we aim to offer something for everyone.
                     </p>
                 </section>
             </article>
@@ -326,10 +445,7 @@
                 </section>
                 <section class="content__text-box content__text-box_secondary">
                     <p class="content__text content__text_secondary">
-                    At Zwitch Originals, we go beyond off-the-shelf options. We offer customization services where we collaborate with clients to bring their visions to life.
-                    </p>
-                    <p class="content__text content__text_secondary">
-                    Our team works closely with each customer to understand their preferences and create a bespoke artwork that reflects their style. Please refer to our terms and conditions related to customisation.
+                        At Zwitch Originals, we go beyond off-the-shelf options. We offer customization services where we collaborate with clients to bring their visions to life. Our team works closely with each customer to understand their preferences and create a bespoke artwork that reflects their style. Please refer to our terms and conditions related to customisation.
                     </p>
                 </section>
             </article>
@@ -343,7 +459,7 @@
                     <h2 class="content__title">Info</h2>
                 </section>
                 <section class="content__text-box content__text-box_secondary">
-                    <p class="content__text content__text_secondary">
+                    <p class="content__text content__text_secondary"> 
                         We aspire to be the premier customization apparel brand pan India. 
                     </p>
                     <p class="content__text content__text_secondary">
@@ -353,26 +469,44 @@
             </article>
         </main>
     </div>
-    <div class="container" style="background-color: #fff;">
-        <main>
-            <h1 class="page-title-secondary">About Us</h1>
-            <article class="content">
-                <section class="content__descriptor content__descriptor_secondary">
-                    <h2 class="content__title">Info</h2>
-                </section>
-                <section class="content__text-box content__text-box_secondary">
-                    <p class="content__text content__text_secondary">
-                        We aim to be the investors we wished we had when we started out.
-                        Lightning-fast, always on your side and fundamentally helpful.
-                    </p>
-                    <p class="content__text content__text_secondary">
-                        Our knowledge is your knowledge. Our network is your network. Your
-                        problems are our problems. We don't have all the answers, but we
-                        will help you find them.
-                    </p>
-                </section>
-            </article>
-        </main>
+    
+
+
+
+
+
+    <div class="header">
+        <h1>Reliable, efficient delivery</h1>
+        <h1>Powered by Technology</h1>
+
+        <p>Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful</p>
+    </div>
+    <div class="row1-container">
+        <div class="box box-down cyan">
+        <h2>Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+        </div>
+
+        <div class="box red">
+        <h2>Team Builder</h2>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+        </div>
+
+        <div class="box box-down blue">
+        <h2>Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+        </div>
+    </div>
+    <div class="row2-container">
+        <div class="box orange">
+        <h2>Karma</h2>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
+        </div>
     </div>
 
     <div style="background-color: #c2edfe;">
