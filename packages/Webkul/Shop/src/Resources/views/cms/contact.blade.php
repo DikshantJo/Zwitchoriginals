@@ -727,227 +727,300 @@ input[type="checkbox"] {
             <div class="faq-right">
               <h3>Shopping Information</h3>
               <div class="faq-main">
-                <div class="faq-item">
-                  <div class="faq-label">What is ZWITCH all about?
-                    <i></i>
-                  </div>
-                  <div class="faq-cont">
-                    <p>Legend says.. It is a streetwear brand which is more than thrilled to introduce you to a world of
-                      personalized fashion, where every Garment and Design tells a unique story. Our designs are crafted out
-                      of love with a new designing approach.</p>
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer">What is ZWITCH all about?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Legend says.. It is a streetwear brand which is more than thrilled to introduce you to a world of personalized fashion, where every Garment and Design tells a unique story. Our designs are crafted out of love with a new designing approach.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">What sets ZWITCH apart from other streetwear brands?<i></i></div>
-                  <div class="faq-cont">
-                    <p>We Do not offer any regular or random designs. Our designs are bold, vibrant, and unique, setting
-                      them apart from conventional and usual streetwear. Our t-shirts are crafted with premium quality
-                      materials, ensuring durability and comfort. We mean it when we say #getridoftheordinary Clang!</p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-2">What sets ZWITCH apart from other streetwear brands?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>We Do not offer any regular or random designs. Our designs are bold, vibrant, and unique, setting them apart from conventional and usual streetwear. Our t-shirts are crafted with premium quality materials, ensuring durability and comfort. We mean it when we say #getridoftheordinary Clang!</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">Where can I buy ZWITCH products?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Currently, www.zwitchoriginals.com is the only space where you can find our products.</p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-3">Where can I buy ZWITCH products?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Currently, <a href="www.zwitchoriginals.com">www.zwitchoriginals.com</a> is the only space where you can find our products.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">How often do you release new collections?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Get ready for weekly drops! Stay on the pulse of urban fashion and snag your favorites before they're
-                      gone – subscribe for early access and exclusive drops! 🤩</p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-4" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-4">How often do you release new collections?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Get ready for weekly drops! Stay on the pulse of urban fashion and snag your favorites before they're gone – subscribe for early access and exclusive drops! 🤩</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">Can I find limited edition items in your collections?<i></i></div>
-                  <div class="faq-cont">
-                    <p>We push the boundaries of street style with premium quality, limited-edition t-shirts. Our bold and
-                      vibrant designs are crafted to turn heads and ignite conversation. Don't miss your chance to own a
-                      unique piece of wearable art – subscribe to stay ahead of the drops!</p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-5" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-5">Can I find limited edition items in your collections?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>We push the boundaries of street style with premium quality, limited-edition t-shirts. Our bold and vibrant designs are crafted to turn heads and ignite conversation. Don't miss your chance to own a unique piece of wearable art – subscribe to stay ahead of the drops!</p>
                   </div>
                 </div>
-    
-                <div class="faq-item">
-                  <div class="faq-label">Will you be adding more colors or sizes in the future?<i></i></div>
-                  <div class="faq-cont">
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-6" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-6">Will you be adding more colors or sizes in the future?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
                     <p>We're always looking to expand our offerings! Stay tuned for updates on new colors and sizes.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">Will you be adding more Products in the future?<i></i></div>
-                  <div class="faq-cont">
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-7" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-7">Will you be adding more Products in the future?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
                     <p>Why spill the beans so early? Let us surprise you. Stay Tuned..</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">Do you ship internationally?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Please Refer to our shipping policy https://zwitchoriginals.com/page/shipping-policy</p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-8" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-8">Do you ship internationally?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Please Refer to our shipping policy <a href="https://zwitchoriginals.com/page/shipping-policy">https://zwitchoriginals.com/page/shipping-policy</a></p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">What is your return/exchange policy?<i></i></div>
-                  <div class="faq-cont">
-                    <p>https://zwitchoriginals.com/page/refund-policy</p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-9" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-9">What is your return/exchange policy?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p><a href="https://zwitchoriginals.com/page/refund-policy">https://zwitchoriginals.com/page/refund-policy</a></p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">What sizes do you offer?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Currently, our t-shirts are available in sizes small, medium, large, and extra-large to accommodate a
-                      wide range of body types.</p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-10" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-10">What sizes do you offer?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Currently, our t-shirts are available in sizes small, medium, large, and extra-large to accommodate a wide range of body types.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">Are your products sustainable/ethical?<i></i></div>
-                  <div class="faq-cont">
-                    <p>We bring you fresh streetwear that's kind to the planet and people. Our premium t-shirts boast
-                      vibrant designs on ethically sourced materials. We believe in responsible fashion – join the movement!
-                      Join us in redefining streetwear with a commitment to responsibility. Look good, feel good, do good.
-                    </p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-11" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-11">Are your products sustainable/ethical?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>We bring you fresh streetwear that's kind to the planet and people. Our premium t-shirts boast vibrant designs on ethically sourced materials. We believe in responsible fashion – join the movement! Join us in redefining streetwear with a commitment to responsibility. Look good, feel good, do good.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">What are the benefits of becoming a subscribed customer?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Good Question! You will have exclusive access to custom designs, amazing discounts, early Drops, etc.
-                    </p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-12" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-12">What are the benefits of becoming a subscribed customer?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Good Question! You will have exclusive access to custom designs, amazing discounts, early Drops, etc.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">How long will the subscription last?<i></i></div>
-                  <div class="faq-cont">
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-13" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-13">How long will the subscription last?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
                     <p>All benefits associated with Zwitch Originals Exclusive are available for a year.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">What happens if I want to cancel my Subscription mid-way?<i></i></div>
-                  <div class="faq-cont">
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-14" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-14">What happens if I want to cancel my Subscription mid-way?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
                     <p>Our Exclusive subscription is non-refundable and non-transferable. 🥹</p>
                   </div>
                 </div>
-    
-                <div class="faq-item">
-                  <div class="faq-label">How can I stay updated on new releases and promotions?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Please subscribe to your newsletter, follow our social media accounts, or join a loyalty program for
-                      exclusive updates and offers.</p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-15" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-15">How can I stay updated on new releases and promotions?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Please subscribe to your newsletter, follow our social media accounts, or join a loyalty program for exclusive updates and offers.</p>
                   </div>
                 </div>
-    
-                <div class="faq-item">
-                  <div class="faq-label">Do you have a physical store or pop-up events?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Currently, we have no physical store :) but yes, we would store up in pop cultural events in town.
-                    </p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-16" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-16">Do you have a physical store or pop-up events?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Currently, we have no physical store :) but yes, we would store up in pop cultural events in town.</p>
                   </div>
                 </div>
-    
-    
-                <div class="faq-item">
-                  <div class="faq-label">Can I collaborate with ZWITCH?<i></i></div>
-                  <div class="faq-cont">
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-17" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-17">Can I collaborate with ZWITCH?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
                     <p>If you're open to collaborations, contact ZWITCH ORIGINALS support team.</p>
                   </div>
                 </div>
-    
-                <div class="faq-item">
-                  <div class="faq-label">How can I contact customer support?<i></i></div>
-                  <div class="faq-cont">
-                    <p>You can drop us a mail any part of time to *EMAIL ADDRESS* We would reply back to you sooner than
-                      your Crush. OOPS! </p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-18" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-18">How can I contact customer support?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>You can drop us a mail any part of time to <em>*EMAIL ADDRESS*</em>. We would reply back to you sooner than your Crush. OOPS!</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">What payment methods do you accept?<i></i></div>
-                  <div class="faq-cont">
-                    <p>We accept all major credit cards, debit cards, and other secure online payment methods including UPI.
-                    </p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-19" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-19">What payment methods do you accept?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>We accept all major credit cards, debit cards, and other secure online payment methods including UPI.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">How do I take care of ZWITCH products?<i></i></div>
-                  <div class="faq-cont">
-                    <p>We include care instructions for your garments to help customers maintain the quality of their
-                      purchases.
-                    </p>
+              </div>
+
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-20" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-20">How do I take care of ZWITCH products?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>We include care instructions for your garments to help customers maintain the quality of their purchases.</p>
                   </div>
                 </div>
-    
-    
+              </div>
+
               </div>
     
               <h3>Customization FAQs</h3>
               <div class="faq-main">
-                <div class="faq-item">
-                  <div class="faq-label">Do you offer customizations for your T-shirt?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Yes, we do offer customization services for our subscribed customers. Through personalized
-                      consultations, we discuss your specific requirements and preferences to create a bespoke design just
-                      for you.</p>
+              <div class="faq-drawer">
+                <input class="faq-drawer__trigger" id="faq-drawer-customization" type="checkbox" />
+                <label class="faq-drawer__title" for="faq-drawer-customization">Do you offer customizations for your T-shirt?</label>
+                <div class="faq-drawer__content-wrapper">
+                  <div class="faq-drawer__content">
+                    <p>Yes, we do offer customization services for our subscribed customers. Through personalized consultations, we discuss your specific requirements and preferences to create a bespoke design just for you.</p>
                   </div>
                 </div>
-                <div class="faq-item">
-                  <div class="faq-label">How can I request customization for my T-shirt? <i></i></div>
-                  <div class="faq-cont">
-                    <p>After subscribing to our services, you can schedule a consultation with our design team. During this
-                      session, we'll gather information about your preferences, style, and any specific design elements you
-                      desire.</p>
+              </div>
+
+                  <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-request-customization" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-request-customization">How can I request customization for my T-shirt?</label>
+                    <div class="faq-drawer__content-wrapper">
+                      <div class="faq-drawer__content">
+                        <p>After subscribing to our services, you can schedule a consultation with our design team. During this session, we'll gather information about your preferences, style, and any specific design elements you desire.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-label">Are there any limitations to the customization options?<i></i></div>
-                  <div class="faq-cont">
-                    <p>While we strive to accommodate our customers' preferences to the best of our ability, certain design
-                      elements or requests may have limitations based on technical feasibility and production capabilities.
-                    </p>
+
+                  <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-limitations" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-limitations">Are there any limitations to the customization options?</label>
+                    <div class="faq-drawer__content-wrapper">
+                      <div class="faq-drawer__content">
+                        <p>While we strive to accommodate our customers' preferences to the best of our ability, certain design elements or requests may have limitations based on technical feasibility and production capabilities.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-label">Do you offer any design templates for customization?<i></i></div>
-                  <div class="faq-cont">
-                    <p>We do not have any pre-made templates for customization as it is purely based on client ideas.</p>
+
+                  <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-templates" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-templates">Do you offer any design templates for customization?</label>
+                    <div class="faq-drawer__content-wrapper">
+                      <div class="faq-drawer__content">
+                        <p>We do not have any pre-made templates for customization as it is purely based on client ideas.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-label">What is the process for customizing a T-shirt?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Once we've discussed your requirements and agreed on the design concept, our team will proceed with
-                      creating the custom artwork. You'll have the opportunity to review and provide feedback before
-                      finalizing the design.</p>
+
+                  <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-process" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-process">What is the process for customizing a T-shirt?</label>
+                    <div class="faq-drawer__content-wrapper">
+                      <div class="faq-drawer__content">
+                        <p>Once we've discussed your requirements and agreed on the design concept, our team will proceed with creating the custom artwork. You'll have the opportunity to review and provide feedback before finalizing the design.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-label">How long does it take to receive a customized T-shirt?<i></i></div>
-                  <div class="faq-cont">
-                    <p>The turnaround time for customized t-shirts varies depending on the complexity of the design and our
-                      current workload. However, we aim to complete the process within a reasonable timeframe and keep you
-                      informed throughout</p>
+
+                  <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-turnaround" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-turnaround">How long does it take to receive a customized T-shirt?</label>
+                    <div class="faq-drawer__content-wrapper">
+                      <div class="faq-drawer__content">
+                        <p>The turnaround time for customized t-shirts varies depending on the complexity of the design and our current workload. However, we aim to complete the process within a reasonable timeframe and keep you informed throughout.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-label">What are the terms and conditions for customizations?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Our terms and conditions outline important details such as payment terms, intellectual property
-                      rights, and revisions. We ensure transparency and fairness throughout the customization process.</p>
+
+                  <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-terms" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-terms">What are the terms and conditions for customizations?</label>
+                    <div class="faq-drawer__content-wrapper">
+                      <div class="faq-drawer__content">
+                        <p>Our terms and conditions outline important details such as payment terms, intellectual property rights, and revisions. We ensure transparency and fairness throughout the customization process.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-label">Can I cancel or modify my customization request?<i></i></div>
-                  <div class="faq-cont">
-                    <p>Depending on the stage of the design process, you may be able to cancel or modify your customization
-                      request. However, please note that we offer different pricing for customisation. restrictions may
-                      apply, so we encourage you to communicate any changes promptly.</p>
+
+                  <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-modify" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-modify">Can I cancel or modify my customization request?</label>
+                    <div class="faq-drawer__content-wrapper">
+                      <div class="faq-drawer__content">
+                        <p>Depending on the stage of the design process, you may be able to cancel or modify your customization request. However, please note that restrictions may apply, so we encourage you to communicate any changes promptly.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-label">How do I subscribe to your customization services?<i></i></div>
-                  <div class="faq-cont">
-                    <p>You can subscribe to our customization services through our website or by contacting our customer
-                      support team directly. Once subscribed, you'll gain access to exclusive benefits and personalized
-                      design consultations.</p>
+
+                  <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-subscribe" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-subscribe">How do I subscribe to your customization services?</label>
+                    <div class="faq-drawer__content-wrapper">
+                      <div class="faq-drawer__content">
+                        <p>You can subscribe to our customization services through our website or by contacting our customer support team directly. Once subscribed, you'll gain access to exclusive benefits and personalized design consultations.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
+
               </div>
             </div>
           </div>
