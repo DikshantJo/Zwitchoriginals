@@ -430,7 +430,7 @@ body {
       font-size: 18px;
       font-weight: 500;
       /* font-weight: normal; */
-      margin: 35px 0 15px 0;
+      margin: 55px 0 55px 0;
       color: #777;
     }
 
@@ -568,7 +568,7 @@ body {
     /* Test */
     
 .container {
- padding: 200px;
+ padding: 100px 200px 200px 200px;
 }
 
 .faq-drawer {
@@ -587,12 +587,20 @@ body {
   border-top: #000 1px solid;
   cursor: pointer;
   display: block;
-  font-size: 1.25em;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
   padding: 30px 0 0 0;
   position: relative;
   margin-bottom: 0;
   transition: all 0.25s ease-out;
+  color: #1a1a1a;
+}
+
+.faq-drawer__content p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 14px;
+  color: #777;
 }
 
 .faq-drawer__title::after {
@@ -634,7 +642,10 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 80px;
+    padding: 35px !important;
+  }
+  .ContactUsPrimary h1 {
+    font-size:64px;
   }
 }
 
@@ -710,7 +721,7 @@ input[type="checkbox"] {
           </div>
         </div>
       </div>
-      <div class="" style="margin-top: 10vh;">
+      <div class="" style="margin-top: 0vh;">
         <div class="container">
           <!-- <h2 class="faq-title">FAQs</h2> -->
           <div class="faq-group">
@@ -1033,45 +1044,6 @@ input[type="checkbox"] {
         <button style="padding: 10px 20px; font-size: 16px;border-radius: 50px; border: none; font-weight: 500;">Click
           Me</button>
       </div>
-
-
-
-      <div class="container">
-    
-    <h1>Accordion</h1>
-    
-    <div class="faq-drawer">
-      <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer">DRAWER ONE </label>
-      <div class="faq-drawer__content-wrapper">
-        <div class="faq-drawer__content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="faq-drawer">
-      <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">DRAWER TWO</label>
-      <div class="faq-drawer__content-wrapper">
-        <div class="faq-drawer__content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="faq-drawer">
-      <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-3">DRAWER THREE</label>
-      <div class="faq-drawer__content-wrapper">
-        <div class="faq-drawer__content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.            
-          </p>
-        </div>
-      </div>
-    </div>
     
   </div>
 
