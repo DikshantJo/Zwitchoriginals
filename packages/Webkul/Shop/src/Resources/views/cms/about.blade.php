@@ -332,10 +332,10 @@ h2 {
     color: var(--varyDarkBlue);
     font-weight: var(--weight3);
 }
-img, video {
+.box img,.box video {
     width: 50px;
     height: 50px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 @media (min-width: 950px) {
@@ -367,6 +367,7 @@ img, video {
         font-size: 16px;
     }
     
+    
 }
 
 .header h1 {
@@ -385,6 +386,11 @@ img, video {
         }
         .page-title-secondary {
             font-size:24px;
+        }
+        .page-title {
+            line-height: inherit;
+            font-weight: 600 !important;
+            margin-bottom: 0 !important;
         }
     }
 </style>
