@@ -231,7 +231,7 @@
     }
 
     .content__text {
-        width: 320px;
+        width: 520px;
         color: #fff;
     }
 
@@ -262,7 +262,6 @@
 h1:first-of-type {
     font-weight: var(--weight1);
     color: var(--varyDarkBlue);
-
 }
 
 h1:last-of-type {
@@ -287,7 +286,6 @@ h1:last-of-type {
     line-height: 2;
     color: var(--grayishBlue);
 }
-
 
 .box p {
     color: var(--grayishBlue);
@@ -334,7 +332,11 @@ h2 {
     color: var(--varyDarkBlue);
     font-weight: var(--weight3);
 }
-
+img, video {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+}
 
 @media (min-width: 950px) {
     .row1-container {
@@ -354,10 +356,15 @@ h2 {
     }
     .box {
         width: 20%;
-     
+        border-radius: 16px;
     }
     .header p {
-        width: 30%;
+        width: 45%;
+    }
+    .box h2 {
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 16px;
     }
     
 }
@@ -365,6 +372,8 @@ h2 {
 .header h1 {
     font-size:24px;
     margin: 16px 0;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
     @media only screen and (max-width: 580px) {
@@ -384,7 +393,7 @@ h2 {
 
     <div class="container" style="margin-top: 45px;">
         <main>
-            <h1 class="page-title">Zwitch Originals</h1>
+            <h1 class="page-title" style='color:#fff'>Zwitch Originals</h1>
             <article class="content">
                 <section class="content__descriptor">
                     <h2 class="content__title">About us</h2>
