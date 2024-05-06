@@ -436,6 +436,7 @@ body {
 
     .faq-group h3:first-child {
       margin-top: 0px;
+      margin-bottom: 20px;
     }
 
     .faq-btns {
@@ -659,6 +660,13 @@ input[type="checkbox"] {
     padding: 100px 0px 100px 0px;
   }
 }
+
+@media (min-width:900px) and (max-width:1330px) {
+  .containerC {
+    padding: 100px 50px 100px 50px;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .containerC {
