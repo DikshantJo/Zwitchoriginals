@@ -280,7 +280,7 @@ body {
   min-height: 100vh;
 } */
 
-    .container {
+    .containerC {
       margin: 0 auto;
       padding: 0 4rem 4rem 4rem;
       width: 48rem;
@@ -395,7 +395,7 @@ body {
       margin: 0px;
     }
 
-    .container {
+    .containerC {
       max-width: 1200px;
       width: 100%;
       padding: 0px 45px;
@@ -567,7 +567,7 @@ body {
 
     /* Test */
     
-.container {
+.containerC {
  padding: 100px 200px 200px 200px;
 }
 
@@ -641,7 +641,7 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
+  .containerC {
     padding: 35px !important;
   }
   .ContactUsPrimary h1 {
@@ -661,7 +661,7 @@ input[type="checkbox"] {
               <p style="color: #ddd;">Feel free to reach out via email or phone if you have any questions or need assistance
                 with your order.</p>
               <!-- <p style="font-weight: 600; margin-top: 10px;">Customersupport@zwitchoriginals.com</p> -->
-              <a href="" class="emailUsCTA">Customer Support</a>
+              <a href="" class="emailUsCTA" href="mailto:support@zwitchoriginals.com">Customer Support</a>
             </div>
           </div>
           <!-- <div class="displayFlex mt-6 ContactUsSubContainer">
@@ -722,7 +722,7 @@ input[type="checkbox"] {
         </div>
       </div>
       <div class="" style="margin-top: 0vh;">
-        <div class="container">
+        <div class="containerC">
           <!-- <h2 class="faq-title">FAQs</h2> -->
           <div class="faq-group">
             <div class="faq-left">
@@ -1041,8 +1041,8 @@ input[type="checkbox"] {
       <div
         style="background: url('https://zwitchoriginals.com//storage/channel/1/t.jpg'); height: 50vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-size: cover;">
         <h2 style="color: white; margin-bottom: 20px;">Connect with us here</h2>
-        <button style="padding: 10px 20px; font-size: 16px;border-radius: 50px; border: none; font-weight: 500;">Click
-          Me</button>
+        <a href="mailto:support@zwitchoriginals.com" style="padding: 10px 20px; font-size: 16px;border-radius: 50px; border: none; font-weight: 500;background:#fff">Click
+          Me</a>
       </div>
     
   </div>
