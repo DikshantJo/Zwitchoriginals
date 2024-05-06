@@ -641,6 +641,19 @@ input[type="checkbox"] {
   display: none;
 }
 
+@media(max-width:1980px) {
+  .containerC {
+    padding: 100px 0;
+  }
+}
+
+
+@media(max-width:1660px) {
+  .containerC {
+    padding: 100px 0;
+  }
+}
+
 @media (max-width:1440px){
   .containerC {
     padding: 100px 0px 100px 0px;
