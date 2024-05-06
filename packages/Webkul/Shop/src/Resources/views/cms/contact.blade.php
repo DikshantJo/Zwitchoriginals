@@ -150,7 +150,7 @@
     }
 
     .FAQsubTitleDescription {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 32px;
       margin-top: 10px;
       margin-bottom: 38px;
@@ -256,7 +256,7 @@
       .ContactUsPrimary p {
         font-size: 16px;
         line-height: 24px;
-        color: #f2f2f2;
+        color: #fff;
       }
     }
 
@@ -584,10 +584,10 @@ body {
 }
 
 .faq-drawer__title {
-  border-top: #000 1px solid;
+  border-top: #dfdfdf 1px solid;
   cursor: pointer;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   padding: 30px 0 0 0;
   position: relative;
@@ -618,6 +618,7 @@ body {
   transition: 0.35s ease-in-out;
   vertical-align: top;
   width: 10px;
+  border-color:#777;
 }
 
 /* OPTIONAL HOVER STATE */
@@ -640,12 +641,30 @@ input[type="checkbox"] {
   display: none;
 }
 
+@media (max-width:1440px){
+  .containerC {
+    padding: 100px 0px 100px 0px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .containerC {
-    padding: 35px !important;
+    padding: 25px !important;
   }
   .ContactUsPrimary h1 {
     font-size:64px;
+    line-height: 65px;
+    margin-bottom: 14px;
+    text-align: left;
+  }
+  .faq-group h3:first-child {
+    margin-bottom:24px;
+  }
+  .faq-drawer__title {
+    font-size:16px;
+  }
+  .FAQsubTitle {
+    line-height:46px;
   }
 }
 
@@ -658,10 +677,10 @@ input[type="checkbox"] {
           <div class="ContactUsPrimary">
             <h1> Contact us</h1>
             <div style="margin-top: 0px;">
-              <p style="color: #ddd;">Feel free to reach out via email or phone if you have any questions or need assistance
+              <p style="">Feel free to reach out via email or phone if you have any questions or need assistance
                 with your order.</p>
               <!-- <p style="font-weight: 600; margin-top: 10px;">Customersupport@zwitchoriginals.com</p> -->
-              <a href="" class="emailUsCTA" href="mailto:support@zwitchoriginals.com">Customer Support</a>
+              <a class="emailUsCTA" href="mailto:support@zwitchoriginals.com">Customer Support</a>
             </div>
           </div>
           <!-- <div class="displayFlex mt-6 ContactUsSubContainer">
@@ -1039,7 +1058,11 @@ input[type="checkbox"] {
       </div>
           
       <div
-        style="background: url('https://zwitchoriginals.com//storage/channel/1/t.jpg'); height: 50vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-size: cover;">
+        style="background: url('https://zwitchoriginals.com//storage/channel/1/t.jpg'); height: 50vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-size: cover;
+            width: 90%;
+            margin: auto;
+            border-radius: 44px;"
+        >
         <h2 style="color: white; margin-bottom: 20px;">Connect with us here</h2>
         <a href="mailto:support@zwitchoriginals.com" style="padding: 10px 20px; font-size: 16px;border-radius: 50px; border: none; font-weight: 500;background:#fff">Click
           Me</a>
