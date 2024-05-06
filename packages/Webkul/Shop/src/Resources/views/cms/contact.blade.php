@@ -667,6 +667,12 @@ input[type="checkbox"] {
   }
 }
 
+@media (min-width:601px) and (max-width:899px) {
+  .containerC {
+    padding: 100px 50px 100px 50px;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .containerC {
