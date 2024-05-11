@@ -36,7 +36,7 @@
         /* background-color: #dfdfdf; */
     }
 
-    .container {
+    .containerC {
         max-width: 90%;
         margin: 0 auto;
         padding: 6rem 6rem 6rem 6rem;
@@ -113,14 +113,15 @@
     }
 
     .page-title-secondary {
-        margin-bottom: 0rem;
+        margin-bottom: 1rem;
         font-family: 'Poppins', sans-serif;
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: -0.4px;
         line-height: 10rem;
         color: #1a1a1a;
+        margin-bottom: 20px;
     }
 
     @media only screen and (max-width: 760px) {
@@ -205,8 +206,8 @@
         align-items: flex-end;
         gap: 2rem;
         width: 50%;
-        border-top: 1px solid #000;
-        border-bottom: 1px solid #000;
+        border-top: 1px solid #777;
+        border-bottom: 1px solid #777;
         margin-right: 10rem;
         padding: 4rem 0;
     }
@@ -236,7 +237,9 @@
     }
 
     .content__text_secondary {
-        color: #000;
+        color: #777;
+        font-size: 16px;
+        line-height: 28px;
     }
 
     :root {
@@ -391,13 +394,14 @@ h2 {
             line-height: inherit;
             font-weight: 600 !important;
             margin-bottom: 0 !important;
+            font-size:450px !important;
         }
     }
 </style>
 {{-- Page Layout --}}
 <x-shop::layouts>
 
-    <div class="container" style="margin-top: 45px;">
+    <div class="containerC" style="margin-top: 45px; max-width:90%">
         <main>
             <h1 class="page-title" style='color:#fff'>Zwitch Originals</h1>
             <article class="content">

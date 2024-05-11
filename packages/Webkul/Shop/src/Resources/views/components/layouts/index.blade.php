@@ -107,6 +107,10 @@
                 z-index: 999;
             }
 
+            .icon-heart-fill:before {
+                color:#3e9ad9;
+            }
+
             @media(max-width:550px) {
                 .categorySliderParent,.categorySliderImg {
                     width: 80px;

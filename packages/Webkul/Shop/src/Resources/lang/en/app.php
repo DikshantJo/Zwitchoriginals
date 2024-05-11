@@ -508,7 +508,7 @@ return [
             'compare'                => 'Compare',
             'description'            => 'Description',
             'review'                 => 'Reviews',
-            'related-product-title'  => 'Related Products',
+            'related-product-title'  => 'You may also like',
             'tax-inclusive'          => 'Inclusive of all taxes',
             'up-sell-title'          => 'We found other products you might like!',
         ],
@@ -792,7 +792,7 @@ return [
     ],
 
     'emails' => [
-        'dear'   => 'Dear :customer_name',
+        'dear'   => 'Hey :customer_name',
         'thanks' => 'If you need any kind of help please contact us at <a href=":link" style=":style">:email</a>.<br/>Thanks!',
 
         'customers' => [
