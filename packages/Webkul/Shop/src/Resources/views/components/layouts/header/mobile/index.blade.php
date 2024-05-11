@@ -23,11 +23,18 @@
                 <x-slot:header>
                     <div class="flex justify-center items-center">
                         <a href="{{ route('shop.home.index') }}">
-                            <img
+                            <!-- <img
                                 src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
                                 alt="Bagisto"
                                 width="100"
                                 height="29"
+                            > -->
+                            <img
+                                src="https://zwitchoriginals.com//storage/channel/1/FinalZwitch.gif"
+                                width="131"
+                                height="29"
+                                alt="Bagisto"
+                                style='border-radius:100px'
                             >
                         </a>
                     </div>
@@ -125,11 +132,18 @@
                 class="max-h-[80px] h-[80px] w-[80px]  flex justify-center items-center"
                 aria-label="Bagisto"
             >
-                <img
+                <!-- <img
                     src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
                     alt="Bagisto"
                     width="131"
                     height="29"
+                > -->
+                <img
+                    src="https://zwitchoriginals.com//storage/channel/1/FinalZwitch.gif"
+                    width="131"
+                    height="29"
+                    alt="Bagisto"
+                    style='border-radius:100px'
                 >
             </a>
         </div>
