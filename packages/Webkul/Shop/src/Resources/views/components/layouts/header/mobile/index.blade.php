@@ -21,7 +21,7 @@
                 </x-slot:toggle>
 
                 <x-slot:header>
-                    <div class="flex justify-center items-center">
+                    <div class="flex justify-center items-center ">
                         <a href="{{ route('shop.home.index') }}">
                             <!-- <img
                                 src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
@@ -29,7 +29,7 @@
                                 width="100"
                                 height="29"
                             > -->
-                            <img
+                            <img class="w-[80px]"
                                 src="https://zwitchoriginals.com//storage/channel/1/FinalZwitch.gif"
                                 width="131"
                                 height="29"
@@ -129,7 +129,7 @@
 
             <a
                 href="{{ route('shop.home.index') }}"
-                class="max-h-[80px] h-[80px] w-[80px]  flex justify-center items-center"
+                class="max-h-[80px] h-[80px] w-[60px]  flex justify-center items-center"
                 aria-label="Bagisto"
             >
                 <!-- <img
