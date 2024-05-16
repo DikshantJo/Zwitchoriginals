@@ -148,7 +148,10 @@
 
     <div class="flex justify-between  px-[60px] py-[13px] bg-[#77777] absolute bottom-0 left-0 w-full" style='background:#fff'>
         <p class="text-[14px] text-center block w-full" style='color:#000'>
-            @lang('shop::app.components.layouts.footer.footer-text')
+            Venkatraopet, Venkatapuram, Alwal, Secunderabad, Hyderabad, Telangana, 50015
+        </p>
+        <p class="text-[14px] text-center block w-full" style='color:#000'>
+            ©Copyright | Zwitch originals | All rights reserved. 
         </p>
     </div>
 </footer>
