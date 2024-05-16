@@ -42,11 +42,11 @@
 
     .containerC {
         max-width: 90%;
-        margin: 0 auto;
+        margin: 45px auto;
         padding: 6rem 6rem 6rem 6rem;
-        /* background: #3f9ad8; */
+        background: #3f9ad8;
         border-radius: 24px;
-        background-image: radial-gradient(circle, rgb(255 255 255 / 16%) 10%, transparent 10%);
+        /* background-image: radial-gradient(circle, rgb(255 255 255 / 16%) 10%, transparent 10%); */
     }
 
     .nav {
@@ -114,10 +114,11 @@
         letter-spacing: -0.4px;
         line-height: 16rem;
         color: #fff;
-        color: #1a1a1a !important;
+        /* color: #1a1a1a !important; */
         /* transform: skew(0deg, 5deg); */
         text-shadow: 4px 3px 4px #0000004a;
         font-weight: 500;
+        text-align:left;
     }
 
     .page-title-secondary {
@@ -130,6 +131,7 @@
         line-height: 10rem;
         color: #1a1a1a;
         margin-bottom: 20px;
+        text-align:left;
     }
 
     @media only screen and (max-width: 760px) {
@@ -169,7 +171,7 @@
 
     .content__descriptor {
         width: 14%;
-        border-top: 1px solid #1a1a1a;
+        border-top: 1px solid #fff;
         padding-top: 4rem;
         color: #fff;
     }
@@ -192,6 +194,7 @@
     .content__title {
         font-size: 1.5rem;
         font-weight: 700;
+        color: #fff;
     }
 
     .content__text-box {
@@ -201,7 +204,7 @@
         align-items: flex-end;
         gap: 2rem;
         width: 50%;
-        border-top: 1px solid #1a1a1a;
+        border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
         margin-right: 10rem;
         padding: 4rem 0;
@@ -241,7 +244,7 @@
 
     .content__text {
         width: 520px;
-        color: #1a1a1a;
+        color: #fff;
     }
 
     .content__text_secondary {
@@ -496,6 +499,10 @@ h1 {
   overflow: auto;
 }
 
+.hbspt-form {
+    width: 100%;
+}
+
 @media screen and (max-width: 700px){
   .box{
     width: 70%;
@@ -511,7 +518,7 @@ h1 {
 <x-shop::layouts>
 
     <div class='testDivContainer' style=''>
-        <div class="containerC" style="margin-top: 0px; max-width:90%">
+        <div class="containerC" style=" max-width:85%">
             <main>
                 <h1 class="page-title" style='color:#fff'>Zwitch Originals</h1>
                 <article class="content">
