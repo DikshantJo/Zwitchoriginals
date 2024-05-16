@@ -3479,7 +3479,7 @@ return [
     ],
 
     'emails' => [
-        'dear'   => 'Dear :admin_name',
+        'dear'   => 'Hey :admin_name',
         'thanks' => 'If you need any kind of help please contact us at <a href=":link" style=":style">:email</a>.<br/>Thanks!',
 
         'admin' => [
