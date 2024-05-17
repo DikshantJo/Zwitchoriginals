@@ -355,7 +355,11 @@ h2 {
     height: 50px;
     margin-top: 15px;
 }
-
+input {
+    height: 50px;
+    font-size: 14px ! IMPORTANT;
+    padding-left: 40px !important;
+}
 @media (min-width: 950px) {
     .row1-container {
         display: flex;
@@ -519,6 +523,7 @@ h1 {
         .page-title-secondary {
             line-height: 2rem;
             margin-bottom:0 !important;
+            margin-top:0 !important;
         }
         .containerC {
             max-width: 90% !important;
