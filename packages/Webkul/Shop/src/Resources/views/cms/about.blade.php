@@ -48,7 +48,10 @@
         border-radius: 24px;
         /* background-image: radial-gradient(circle, rgb(255 255 255 / 16%) 10%, transparent 10%); */
     }
-
+    .container {
+        padding-left: 0;
+        padding-right:0;
+    }
     .nav {
         display: flex;
         flex-direction: row;
@@ -245,6 +248,7 @@
     .content__text {
         width: 520px;
         color: #fff;
+        font-size:16px;
     }
 
     .content__text_secondary {
@@ -409,9 +413,9 @@ h2 {
         }
     }
 
-    .testDivContainer {
+    /* .testDivContainer {
        background-image:radial-gradient(circle at 5% 0%, #3f9ad829 15%, transparent 35%), radial-gradient(circle at 0% 0%, rgba(144, 222, 251, 0.32) 9%, transparent 16%), radial-gradient(circle at 100% 50%, #3f9ad829 5%, transparent 30%), radial-gradient(circle at 100% 50%, rgba(144, 222, 251, 0.25) 8%, transparent 20%), radial-gradient(circle at 5% 81%, #3f9ad829 11%, transparent 24%), radial-gradient(circle at 0% 84%, #3f9ad829 2.5%, transparent 14%);
-    }
+    } */
 
 
     
@@ -612,7 +616,7 @@ h1 {
         </div>        
     </div>
 
-
+<!-- 
 
     <div class="box">
 	    <a class="button" href="#popup1">Let me Pop up</a>
@@ -624,16 +628,16 @@ h1 {
             <a class="close" href="#">&times;</a>
             <div class="content">
             <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
-<script>
-  hbspt.forms.create({
-    region: "eu1",
-    portalId: "144669902",
-    formId: "39db11a8-dbfc-48b0-9b11-7cac6a4ae26f"
-  });
-</script>
+            <script>
+            hbspt.forms.create({
+                region: "eu1",
+                portalId: "144669902",
+                formId: "39db11a8-dbfc-48b0-9b11-7cac6a4ae26f"
+            });
+            </script>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- <div class="header">
