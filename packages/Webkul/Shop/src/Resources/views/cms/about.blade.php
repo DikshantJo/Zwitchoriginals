@@ -395,23 +395,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-    @media only screen and (max-width: 580px) {
-        .content__text {
-            width: 100%;
-        }
-        .container {
-            padding: 10px !important;
-        }
-        .page-title-secondary {
-            font-size:24px;
-        }
-        .page-title {
-            line-height: inherit;
-            font-weight: 600 !important;
-            margin-bottom: 0 !important;
-            font-size:450px !important;
-        }
-    }
+   
 
     /* .testDivContainer {
        background-image:radial-gradient(circle at 5% 0%, #3f9ad829 15%, transparent 35%), radial-gradient(circle at 0% 0%, rgba(144, 222, 251, 0.32) 9%, transparent 16%), radial-gradient(circle at 100% 50%, #3f9ad829 5%, transparent 30%), radial-gradient(circle at 100% 50%, rgba(144, 222, 251, 0.25) 8%, transparent 20%), radial-gradient(circle at 5% 81%, #3f9ad829 11%, transparent 24%), radial-gradient(circle at 0% 84%, #3f9ad829 2.5%, transparent 14%);
@@ -516,6 +500,32 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 580px) {
+        .content__text {
+            width: 100%;
+        }
+        .container {
+            padding: 10px 20px !important;
+        }
+        .page-title-secondary {
+            font-size:24px;
+        }
+        .page-title {
+            line-height: inherit;
+            font-weight: 600 !important;
+            margin-bottom: 0 !important;
+            font-size:45px !important;
+        }
+        .page-title-secondary {
+            line-height: 2rem;
+            margin-bottom:0 !important;
+        }
+        .containerC {
+            max-width: 90% !important;
+            padding: 2rem;
+            margin-top: 10px;
+        }
+    }
 
 </style>
 {{-- Page Layout --}}
