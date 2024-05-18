@@ -268,33 +268,27 @@
         {!! view_render_event('bagisto.shop.layout.body.before') !!}
 
         <div id="app">
-
+<!-- 
             <div id="popup1" class="overlay" style='z-index:999'>
                 <div class="popup">
                     <h2>Zwitch originals</h2>
                     <a class="close" href="#">&times;</a>
                     <div class="content">
-                         <!--   <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+                         
+                     <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
                     <script>
-                    hbspt.forms.create({
-                        region: "eu1",
-                        portalId: "144669902",
-                        formId: "39db11a8-dbfc-48b0-9b11-7cac6a4ae26f"
-                    }); -->
-                     <!-- <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script> -->
-                    <!-- <script>
                     hbspt.forms.create({
                         region: "eu1",
                         portalId: "144688746",
                         formId: "54201212-334a-4f7d-84f6-1669cdf57e33"
                     }); 
                  
-                    </script> -->
+                    </script>
                     </script>
                     </script>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
             {{-- Flash Message Blade Component --}}
