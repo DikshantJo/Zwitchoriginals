@@ -232,10 +232,10 @@
                     Left: -45px !important;
                 }
                 .socialProofContainer  {
-                    padding: 30px 0;
+                    padding: 30px 0 !important;
                 }
                 .footerContainerSubscription {
-                    margin-bottom:100px;
+                    margin-bottom:100px !important;
                 }
                 .staticContent {
                     width: 95%;
@@ -252,6 +252,9 @@
                     margin-bottom: 25px;
                     color: #333;
                     font-family: 'Poppins';
+                }
+                .container {
+                    padding: 0 15px !important;
                 }
             }
 
