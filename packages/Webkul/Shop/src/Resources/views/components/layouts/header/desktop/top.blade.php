@@ -18,7 +18,7 @@
         </x-slot:content>
     </x-shop::dropdown> -->
 
-    <p class="text-xs font-medium">Get UPTO 40% OFF on your 1st order <a href="#" class="underline">SHOP NOW</a></p>
+    <p class="text-xs font-medium">Get UPTO 10% OFF on your 1st order</p>
 
         <!-- <a
             href="{{ route('shop.home.index') }}"
