@@ -181,9 +181,12 @@
             }
 
             .popup h2 {
-            margin-top: 0;
-            color: #333;
-            font-family: Tahoma, Arial, sans-serif;
+                margin-top: 0;
+                color: #333;
+                font-family: 'Poppins';
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 20px;
             }
             .popup .close {
             position: absolute;
@@ -240,7 +243,7 @@
                 .popup {
                     margin: 40px auto;
                     width: 95%;
-                    height: 85vh;
+                    overflow-y:auto;
                 }
                 .popup h2 {
                     margin-top: 0;
