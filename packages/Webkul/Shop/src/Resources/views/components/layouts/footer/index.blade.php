@@ -23,7 +23,7 @@
 
 <footer class="mt-[36px]  max-sm:mt-[30px] zwitchoriginalsFooter flex justify-center items-center flex-col relative" style="background:#425661; min-height:70vh;border-radius:  24px 24px 0 0">
     <div class="container max-lg:px-[30px] max-sm:mt-[30px]" style = 'margin-top:20px'>
-        <div class="flex gap-[25px] justify-between max-lg:flex-wrap" style='border-radius: 12px;padding: 30px;'>
+        <div class="flex gap-[25px] justify-between max-lg:flex-wrap socialProofContainer" style='border-radius: 12px;'>
             <div class="flex flex-col items-start justify-center gap-[20px]">
                 <span class="icon-truck flex items-center justify-center w-[60px] h-[60px] bg-white border border-black rounded-full text-[42px] text-navyBlue p-[10px] featuresBladeIcon"></span>
 
@@ -59,7 +59,7 @@
     </div>
 
     @if ($customization)
-        <div class="flex gap-x-[25px] gap-y-[30px] justify-between p-[60px] max-1060:flex-wrap max-1060:flex-col-reverse max-sm:px-[15px]" style="max-width:1440px; min-width:85%; padding-top:20px;margin-bottom:20px">
+        <div class="flex gap-x-[25px] gap-y-[30px] justify-between p-[60px] max-1060:flex-wrap max-1060:flex-col-reverse max-sm:px-[15px] footerContainerSubscription" style="max-width:1440px; min-width:85%; padding-top:20px;margin-bottom:20px">
             <div class='flex flex-col'>
                 <h3 class="zwitchFooterTitleLeft" style='font-size:34px;font-weight:600;color:#fff'>Get the latest from Zwitch</h3>
                 <div class = "zwitchFooterSocial flex gap-x-[10px] mt-4">
@@ -78,7 +78,7 @@
                 </div>
                 {{-- News Letter subscription --}}
                 @if(core()->getConfigData('customer.settings.newsletter.subscription'))
-                    <div class="grid gap-[10px] mt-20">
+                    <div class="grid gap-[10px] mt-[16px] md:mt-20">
                         <p class="max-w-[288px] leading-[45px] text-[30px] italic" style='color:#fff' >
                             @lang('shop::app.components.layouts.footer.newsletter-text')
                         </p>
@@ -146,11 +146,11 @@
         </div>
     @endif
 
-    <div class="flex justify-between  px-[60px] py-[13px] bg-[#77777] absolute bottom-0 left-0 w-full" style='background:#fff'>
-        <p class="text-[14px] text-center block w-full" style='color:#000'>
+    <div class="flex justify-between  px-[20px] py-[13px] bg-[#77777] absolute bottom-0 left-0 w-full" style='background:#fff'>
+        <p class="text-[14px] text-left block w-full" style='color:#000'>
             Venkatraopet, Venkatapuram, Alwal, Secunderabad, Hyderabad, Telangana, 50015
         </p>
-        <p class="text-[14px] text-center block w-full" style='color:#000'>
+        <p class="text-[14px] text-right block w-full" style='color:#000'>
             ©Copyright | Zwitch originals | All rights reserved. 
         </p>
     </div>
