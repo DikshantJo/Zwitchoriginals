@@ -111,29 +111,12 @@
                 color:#3e9ad9;
             }
 
-            @media(max-width:550px) {
-                .categorySliderParent,.categorySliderImg {
-                    width: 80px;
-                    height:80px;
-                }
-                .catergorySliderContainer {
-                    gap: 0;
-                    height: 120px;
-                }
-                .categoryLeftArrow,.categoryRightArrow {
-                    width: 40px;
-                    height:40px;
-                    font-size:18px;
-                }
-                .categoryRightArrow {
-                    right: -45px !important;
-                }
-                .categoryLeftArrow {
-                    Left: -45px !important;
-                }
+            .socialProofContainer {
+                padding: 30px !important;
             }
-
-
+            .footerContainerSubscription {
+                margin-bottom:20px;
+            }
 
 
             /* Leads pop up form */
@@ -223,6 +206,52 @@
             .hbspt-form {
                 width: 100%;
             }
+
+
+            @media(max-width:550px) {
+                .categorySliderParent,.categorySliderImg {
+                    width: 80px;
+                    height:80px;
+                }
+                .catergorySliderContainer {
+                    gap: 0;
+                    height: 120px;
+                }
+                .categoryLeftArrow,.categoryRightArrow {
+                    width: 40px;
+                    height:40px;
+                    font-size:18px;
+                }
+                .categoryRightArrow {
+                    right: -45px !important;
+                }
+                .categoryLeftArrow {
+                    Left: -45px !important;
+                }
+                .socialProofContainer  {
+                    padding: 30px 0;
+                }
+                .footerContainerSubscription {
+                    margin-bottom:100px;
+                }
+                .staticContent {
+                    width: 95%;
+                }
+                .popup {
+                    margin: 40px auto;
+                    width: 95%;
+                    height: 85vh;
+                }
+                .popup h2 {
+                    margin-top: 0;
+                    font-size: 28px;
+                    font-weight: 600;
+                    margin-bottom: 25px;
+                    color: #333;
+                    font-family: 'Poppins';
+                }
+            }
+
 
         </style>
 
