@@ -125,8 +125,8 @@
             h1 {
             text-align: center;
             font-family: Tahoma, Arial, sans-serif;
-            color: #06D85F;
-            margin: 80px 0;
+            /* color: #06D85F; */
+            /* margin: 80px 0; */
             }
 
             .box {
