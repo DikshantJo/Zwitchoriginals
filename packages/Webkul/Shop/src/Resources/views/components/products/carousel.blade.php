@@ -40,7 +40,7 @@
 
             <a
                 :href="navigationLink"
-                class="secondary-button block w-max mt-[60px] mx-auto py-[11px] px-[43px] rounded-[18px] text-base text-center"
+                class="secondary-button block w-max mt-[20px] mx-auto py-[11px] px-[43px] rounded-[18px] text-base text-center" style="background:#3e9ad9;color:#fff"
                 v-if="navigationLink"
             >
                 @lang('shop::app.components.products.carousel.view-all')
