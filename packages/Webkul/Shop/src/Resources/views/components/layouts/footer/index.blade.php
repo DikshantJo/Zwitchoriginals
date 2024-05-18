@@ -28,7 +28,7 @@
                 <span class="icon-truck flex items-center justify-center w-[60px] h-[60px] bg-white border border-black rounded-full text-[42px] text-navyBlue p-[10px] featuresBladeIcon"></span>
 
                 <div class="">
-                    <p class="text-[16px] font-semibold font-dmserif" style='font-size:24px; color:#fff'>customization available</p>
+                    <p class="text-[16px] font-semibold font-dmserif" style='font-size:24px; color:#fff'>Free shipping</p>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@
                 <span class="icon-support flex items-center w-[60px] h-[60px] bg-white p-[10px] justify-center border border-black rounded-full text-[42px] text-navyBlue featuresBladeIcon"></span>
 
                 <div class="">
-                    <p class="text-[16px] font-semibold font-dmserif" style='font-size:24px; color:#fff'>Sustainable</p>
+                    <p class="text-[16px] font-semibold font-dmserif" style='font-size:24px; color:#fff'>Premium products</p>
                 </div>
             </div>
 
@@ -44,7 +44,7 @@
                 <span class="icon-dollar-sign flex items-center rounded-full w-[60px] h-[60px] p-[10px] justify-center border border-black bg-white text-[42px] text-navyBlue featuresBladeIcon"></span>
 
                 <div class="">
-                    <p class="text-[16px] font-semibold font-dmserif" style='font-size:24px; color:#fff'>Premium quality</p>
+                    <p class="text-[16px] font-semibold font-dmserif" style='font-size:24px; color:#fff'>Sustainable practices</p>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
     </div>
 
     @if ($customization)
-        <div class="flex gap-x-[25px] gap-y-[30px] justify-between p-[60px] max-1060:flex-wrap max-1060:flex-col-reverse max-sm:px-[15px]" style="max-width:1440px; width:85%; padding-top:20px;margin-bottom:20px">
+        <div class="flex gap-x-[25px] gap-y-[30px] justify-between p-[60px] max-1060:flex-wrap max-1060:flex-col-reverse max-sm:px-[15px]" style="max-width:1440px; min-width:85%; padding-top:20px;margin-bottom:20px">
             <div class='flex flex-col'>
                 <h3 class="zwitchFooterTitleLeft" style='font-size:34px;font-weight:600;color:#fff'>Get the latest from Zwitch</h3>
                 <div class = "zwitchFooterSocial flex gap-x-[10px] mt-4">
