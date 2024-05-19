@@ -148,7 +148,7 @@
 
     <div class="flex justify-between  px-[20px] py-[13px] bg-[#77777] absolute bottom-0 left-0 w-full" style='background:#fff'>
         <p class="text-[14px] text-left block w-full" style='color:#000'>
-            Venkatraopet, Venkatapuram, Alwal, Secunderabad, Hyderabad, Telangana, 50015
+            Venkatraopet, Venkatapuram, Alwal, Secunderabad, Hyderabad, Telangana, 500015
         </p>
         <p class="text-[14px] text-right block w-full" style='color:#000'>
             ©Copyright | Zwitch originals | All rights reserved. 
