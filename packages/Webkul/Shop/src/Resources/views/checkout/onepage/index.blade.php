@@ -33,7 +33,7 @@
                     <img
                         src="https://zwitchoriginals.com//storage/channel/1/FinalZwitch.gif"
                         alt="Bagisto "
-                        width="131"
+                        width="100"
                         height="29"
                     >
                 </a>
