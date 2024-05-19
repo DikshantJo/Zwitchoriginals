@@ -210,7 +210,7 @@
                 width: 100%;
             }
 
-            @media (max-width:1440px){
+            @media (min-width:600px) and (max-width:1440px){
                 .collection-card-wrapper .single-collection-card {
                     width: 35%;
                 }
