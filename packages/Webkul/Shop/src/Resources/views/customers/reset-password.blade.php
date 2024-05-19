@@ -23,8 +23,14 @@
                 class="m-[0_auto_20px_auto]"
                 aria-label="Bagisto "
             >
-                <img
+                <!-- <img
                     src="{{ bagisto_asset('images/logo.svg') }}"
+                    alt="Bagisto "
+                    width="131"
+                    height="29"
+                > -->
+                <img
+                    src="https://zwitchoriginals.com//storage/channel/1/FinalZwitch.gif"
                     alt="Bagisto "
                     width="131"
                     height="29"

@@ -6,14 +6,14 @@
     <div class="flex gap-[25px]">
         {!! view_render_event('bagisto.shop.products.view.share.before', ['product' => $product]) !!}
 
-        <div class="hidden gap-[10px] justify-center items-center max-md:flex cursor-pointer">
+        <div class="hidden gap-[10px] justify-center items-center max-md:flex cursor-pointer" style="display:none">
             <span class="icon-share text-[24px]"></span>
             <a href="intent://share/#Intent;action=android.intent.action.SEND;type=text/plain;S.android.intent.extra.TEXT={{ rawurlencode($product->name . ' ' . route('shop.product_or_category.index', [$product->url_key])) }};end">
                 @lang('admin::app.configuration.index.catalog.products.social-share.share')
             </a>
         </div>
 
-        <div class="max-md:hidden">
+        <div class="max-md:hidden" style="display:none">
             <ul class="flex gap-[15px]">
                 @foreach(['facebook', 'twitter', 'instagram', 'pinterest', 'linkedin', 'whatsapp', 'email'] as $social)
                     @if (! core()->getConfigData('catalog.products.social_share.' . $social))

@@ -210,6 +210,12 @@
                 width: 100%;
             }
 
+            @media (max-width:1440px){
+                .collection-card-wrapper .single-collection-card {
+                    width: 35%;
+                }
+            }
+
 
             @media(max-width:550px) {
                 .categorySliderParent,.categorySliderImg {
@@ -255,6 +261,10 @@
                 }
                 .container {
                     padding: 0 15px !important;
+                }
+                .arrow-icon {
+                    background:transparent;
+                    opacity: 1;
                 }
             }
 
