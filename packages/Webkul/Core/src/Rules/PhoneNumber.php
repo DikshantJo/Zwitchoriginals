@@ -23,13 +23,13 @@ class PhoneNumber implements ValidationRule
 
          /* Below code commented and added a new validation that counts the number of digits */
 
-        // if (! preg_match('/^\+?\d+$/', $value)) {
-        //     $fail('core::validation.phone-number')->translate();
-        // }
-        
-        if (!preg_match('/^\+?\d+$/', $value) || strlen(preg_replace('/\D/', '', $value)) < 10) {
+        if (! preg_match('/^\+?\d+$/', $value)) {
             $fail('core::validation.phone-number')->translate();
         }
+
+        // if (!preg_match('/^\+?\d+$/', $value) || strlen(preg_replace('/\D/', '', $value)) < 10) {
+        //     $fail('core::validation.phone-number')->translate();
+        // }
         
     }
 }
