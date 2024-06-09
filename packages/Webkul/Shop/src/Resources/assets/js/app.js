@@ -32,12 +32,33 @@ Object.keys(AllRules).forEach(rule => {
  * This validation is sufficient for global-level phone number validation. If
  * someone wants to customize it, they can override this rule.
  */
+
+/* The below code is commented to add futher validation to add minimum of 10 digit for a phone number in shop */
+// defineRule("phone", (value) => {
+//     if (!value || !value.length) {
+//         return true;
+//     }
+
+//     if (!/^\+?\d+$/.test(value)) {
+//         return false;
+//     }
+
+//     return true;
+// });
+
 defineRule("phone", (value) => {
     if (!value || !value.length) {
         return true;
     }
 
+    // Check if the value is a valid phone number with optional '+'
     if (!/^\+?\d+$/.test(value)) {
+        return false;
+    }
+
+    // Check if the number of digits is at least 10
+    const digitsOnly = value.replace(/\D/g, ''); // Remove non-digit characters
+    if (digitsOnly.length < 10) {
         return false;
     }
 
