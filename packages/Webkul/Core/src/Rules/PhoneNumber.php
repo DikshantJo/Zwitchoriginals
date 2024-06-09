@@ -20,8 +20,16 @@ class PhoneNumber implements ValidationRule
          * This validation is sufficient for global-level phone number validation. If
          * someone wants to customize it, they can override this rule.
          */
-        if (! preg_match('/^\+?\d+$/', $value)) {
+
+         /* Below code commented and added a new validation that counts the number of digits */
+
+        // if (! preg_match('/^\+?\d+$/', $value)) {
+        //     $fail('core::validation.phone-number')->translate();
+        // }
+        
+        if (!preg_match('/^\+?\d+$/', $value) || strlen(preg_replace('/\D/', '', $value)) < 10) {
             $fail('core::validation.phone-number')->translate();
         }
+        
     }
 }
