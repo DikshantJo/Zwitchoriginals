@@ -441,7 +441,7 @@
                             <x-shop::form.control-group.control
                                 type="text"
                                 name="billing[phone]"
-                                rules="required|numeric|min:10|phone"
+                                rules="required|numeric|min:10|phone|max:12"
                                 :label="trans('shop::app.checkout.onepage.addresses.billing.telephone')"
                                 :placeholder="trans('shop::app.checkout.onepage.addresses.billing.telephone')"
                                 v-model="forms.billing.address.phone"
