@@ -59,7 +59,7 @@ defineRule("phone", (value) => {
     // Check if the number of digits is at least 10
     const digitsOnly = value.replace(/\D/g, '').length; // Remove non-digit characters
     if (digitsOnly.length < 10) {
-        return false;
+        return true;
     }
 
     return true;
