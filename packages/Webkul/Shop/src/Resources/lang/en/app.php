@@ -441,7 +441,7 @@ return [
             ],
 
             'configurable' => [
-                'as-low-as' => 'As low as',
+                'as-low-as' => '',
             ],
         ],
 
