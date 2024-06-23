@@ -4,21 +4,23 @@
             @lang('shop::app.emails.dear', ['customer_name' => $fullName]), 👋
         </p>
 
-        <p style="font-size: 16px;color: #384860;line-height: 24px;">
-            @lang('shop::app.emails.customers.subscribed.greeting')
-        </p>
+       
     </div>
 
     <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 40px">
-        @lang('shop::app.emails.customers.subscribed.description')
+        We are thrilled to welcome you to Zwitch Originals! Thank you for subscribing to our services. Your support means a lot to us, and we are excited to have you on board.
+    </p>
+    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 40px">
+        Here are the details of your subscription:
+    </br>
+        Subscription Ammount: ₹{{$subscription_amount}}</br>
+        Subscription Plan: {{$subscription_months}} months</br>
+        Subscription Start Date: {{date('"F j, Y', strtotime($subscription_start_date))}}</br>
+        Subscription End Date: {{date('"F j, Y', strtotime($subscription_end_date))}}</br>
+    </p>
+    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 40px">
+        Should you have any questions or require assistance with your subscription, feel free to reach out to our customer support team at sales@zwitchoriginals.com.
     </p>
 
-    <div style="display: flex;margin-bottom: 95px">
-        <a
-            href="{{ route('shop.subscription.destroy', $customer->token) }}"
-            style="padding: 16px 45px;justify-content: center;align-items: center;gap: 10px;border-radius: 2px;background: #060C3B;color: #FFFFFF;text-decoration: none;text-transform: uppercase;font-weight: 700;"
-        >
-            @lang('shop::app.emails.customers.subscribed.unsubscribe')
-        </a>
-    </div>
+   
 @endcomponent
