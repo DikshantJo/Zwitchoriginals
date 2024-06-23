@@ -701,13 +701,6 @@
                     <p style="">Feel free to reach out via email or phone if you have any questions or need
                         assistance
                         with your order.</p>
-                    <!-- <p style="font-weight: 600; margin-top: 10px;">Customersupport@zwitchoriginals.com</p> -->
-                    <a class="emailUsCTA"></a>
-                    <form action="{{ route('subscribe/payment') }}" method="POST">
-                        @csrf
-                        <button>Subscribe</button>
-                    </form>
-
                 </div>
             </div>
 
@@ -716,59 +709,64 @@
 
 
     </div>
+    @if ($userData['isloggedin'])
+        {{ $userData['name'] }}
+        {{ $userData['subscription_amount'] }}
+        {{ $userData['subscription_months'] }}
+        {{ $userData['subscription_start_date'] }}
+        {{ $userData['subscription_end_date'] }}
+    @else
+        @if (core()->getConfigData('sales.subscription.subscriptiondetails1.active'))
+            <div>
+                <h1>{{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_name') }}</h1>
+                <button class="razorpayPaymentBtn"
+                    data-amount="{{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_amount') }}"
+                    data-plan="{{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_time') }}">
+                    Pay ₹{{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_amount') }} for
+                    {{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_time') }}
+                </button>
+            </div>
+        @endif
+        @if (core()->getConfigData('sales.subscription.subscriptiondetails2.active'))
+            <div>
+                <h1>{{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_name') }}</h1>
+                <button class="razorpayPaymentBtn"
+                    data-amount="{{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_amount') }}"
+                    data-plan="{{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_time') }}">
+                    Pay ₹{{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_amount') }} for
+                    {{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_time') }}
+                </button>
+            </div>
+        @endif
+        @if (core()->getConfigData('sales.subscription.subscriptiondetails3.active'))
+            <div>
+                <h1>{{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_name') }}</h1>
+                <button class="razorpayPaymentBtn"
+                    data-amount="{{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_amount') }}"
+                    data-plan="{{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_time') }}">
+                    Pay ₹{{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_amount') }} for
+                    {{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_time') }}
+                </button>
+            </div>
+        @endif
 
-
-    @if (core()->getConfigData('sales.subscription.subscriptiondetails1.active'))
-        <div>
-            <h1>{{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_name') }}</h1>
-            <button class="razorpayPaymentBtn"
-                data-amount="{{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_amount') }}"
-                data-plan="{{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_time') }}">
-                Pay ₹{{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_amount') }} for
-                {{ core()->getConfigData('sales.subscription.subscriptiondetails1.subscription_time') }}
-            </button>
-        </div>
     @endif
-    @if (core()->getConfigData('sales.subscription.subscriptiondetails2.active'))
-        <div>
-            <h1>{{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_name') }}</h1>
-            <button class="razorpayPaymentBtn"
-                data-amount="{{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_amount') }}"
-                data-plan="{{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_time') }}">
-                Pay ₹{{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_amount') }} for
-                {{ core()->getConfigData('sales.subscription.subscriptiondetails2.subscription_time') }}
-            </button>
-        </div>
-    @endif
-    @if (core()->getConfigData('sales.subscription.subscriptiondetails3.active'))
-        <div>
-            <h1>{{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_name') }}</h1>
-            <button class="razorpayPaymentBtn"
-                data-amount="{{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_amount') }}"
-                data-plan="{{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_time') }}">
-                Pay ₹{{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_amount') }} for
-                {{ core()->getConfigData('sales.subscription.subscriptiondetails3.subscription_time') }}
-            </button>
-        </div>
-    @endif
-
 
 
     <div id="paymentSection"></div>
 
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
-           
-    function showLoader() {
-        var loader = document.querySelector('.loader');
-        loader.style.display = 'block';
-    }
+        function showLoader() {
+            var loader = document.querySelector('.loader');
+            loader.style.display = 'block';
+        }
 
-    // Function to hide the loader
-    function hideLoader() {
-        var loader = document.querySelector('.loader');
-        loader.style.display = 'none';
-    }
+        // Function to hide the loader
+        function hideLoader() {
+            var loader = document.querySelector('.loader');
+            loader.style.display = 'none';
+        }
         document.addEventListener('DOMContentLoaded', function() {
             var buttons = document.querySelectorAll('.razorpayPaymentBtn');
 
@@ -790,7 +788,13 @@
                                 plan: plan
                             })
                         })
-                        .then(response => response.json())
+                        .then(response => {
+                            if (response.redirected) {
+                                window.location.href = response.url;
+                                return false
+                            }
+                            return response.json();
+                        })
                         .then(data => {
                             hideLoader();
                             var options = {
@@ -798,7 +802,8 @@
                                 amount: data.amount,
                                 currency: 'INR',
                                 name: 'Zwitch Originals',
-                                description: 'Payment for ' + plan,
+                                description: 'Payment for subscription of' + plan +
+                                    'months',
                                 image: 'https://zwitchoriginals.com//storage/channel/1/FinalZwitch.gif',
                                 order_id: data.orderId,
                                 handler: function(response) {
@@ -810,13 +815,18 @@
                                                 'X-CSRF-TOKEN': '{{ csrf_token() }}'
                                             },
 
-                                            body: JSON.stringify({...response, 'amount': data.amount/100 , 'subscription_months' : plan})
+                                            body: JSON.stringify({
+                                                ...response,
+                                                'amount': data.amount / 100,
+                                                'subscription_months': plan
+                                            })
                                         }).then(response => response.json())
-                                        .then(data => console.log(data))
-                                    // // Handle success callback
-                                    // alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
-                                    // // Optionally, redirect to a success page
-                                    // window.location.href = '{{ route('payment.callback') }}';
+                                        .then(data => {
+                                            window.location.href =
+                                                '{{ route('subscribe') }}';
+                                        })
+
+
                                 },
                                 prefill: {
                                     name: 'Your Name',
