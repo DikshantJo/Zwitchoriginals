@@ -35,7 +35,7 @@ Route::group(['middleware' => ['locale', 'theme', 'currency']], function () {
         if (auth()->guard()->check()) {
             $user = auth()->guard()->user();
             $userData = [
-                'isloggedin' => true,
+                'is_subscribed' => $user->is_subscribed,
                 'name' => $user->first_name,
                 'subscription_amount' => $user->subscription_amount,
                 'subscription_months' => $user->subscription_months,
@@ -44,7 +44,7 @@ Route::group(['middleware' => ['locale', 'theme', 'currency']], function () {
             ];
         } else {
             $userData = [
-                'isloggedin' => false
+                'is_subscribed' => false,
             ];
         }
         return view('shop::cms.subscription', compact('userData'));
