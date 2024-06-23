@@ -723,12 +723,132 @@ return [
         'name' => 'admin::app.configuration.index.sales.title',
         'info' => 'admin::app.configuration.index.sales.info',
         'sort' => 5,
-    ], [
-       'key'  => 'sales.shipping',
-       'name' => 'admin::app.configuration.index.sales.shipping.title',
-       'info' => 'admin::app.configuration.index.sales.shipping.info',
-       'icon' => 'settings/shipping.svg',
-       'sort' => 1,
+    ],
+    [
+        'key'  => 'sales.subscription',
+        'name' => 'Subscription',
+        'info' => 'Subscription detalis',
+        'icon' => 'settings/shipping.svg',
+        'sort' => 1,
+    ],
+    [
+        'key'    => 'sales.subscription.subscriptiondetails1',
+        'name'   => 'Subscription type 1',
+        'sort'   => 1,
+        'fields' => [
+            [
+                'name'          => 'subscription_name',
+                'title'         => 'Subscription Name',
+                'type'          => 'text',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'subscription_amount',
+                'title'         => 'Subscription Amount',
+                'type'          => 'textarea',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],
+            [
+                'name'          => 'subscription_time',
+                'title'         => 'Subscription Time',
+                'type'          => 'text',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],
+            [
+                'name'          => 'active',
+                'title'         => 'status',
+                'type'          => 'boolean',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ]
+        ]
+    ],
+    [
+        'key'    => 'sales.subscription.subscriptiondetails2',
+        'name'   => 'Subscription type 2',
+        'sort'   => 1,
+        'fields' => [
+            [
+                'name'          => 'subscription_name',
+                'title'         => 'Subscription Name',
+                'type'          => 'text',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'subscription_amount',
+                'title'         => 'Subscription Amount',
+                'type'          => 'textarea',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],
+            [
+                'name'          => 'subscription_time',
+                'title'         => 'Subscription Time (in months)',
+                'type'          => 'text',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],
+            [
+                'name'          => 'active',
+                'title'         => 'status',
+                'type'          => 'boolean',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ]
+        ]
+    ],
+    [
+        'key'    => 'sales.subscription.subscriptiondetails3',
+        'name'   => 'Subscription type 3',
+        'sort'   => 1,
+        'fields' => [
+            [
+                'name'          => 'subscription_name',
+                'title'         => 'Subscription Name',
+                'type'          => 'text',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ], [
+                'name'          => 'subscription_amount',
+                'title'         => 'Subscription Amount',
+                'type'          => 'textarea',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],
+            [
+                'name'          => 'subscription_time',
+                'title'         => 'Subscription Time',
+                'type'          => 'text',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ],
+            [
+                'name'          => 'active',
+                'title'         => 'status',
+                'type'          => 'boolean',
+                'validation'    => 'required',
+                'channel_based' => false,
+                'locale_based'  => true,
+            ]
+        ]
+    ],
+
+    [
+        'key'  => 'sales.shipping',
+        'name' => 'admin::app.configuration.index.sales.shipping.title',
+        'info' => 'admin::app.configuration.index.sales.shipping.info',
+        'icon' => 'settings/shipping.svg',
+        'sort' => 1,
     ], [
         'key'    => 'sales.shipping.origin',
         'name'   => 'admin::app.configuration.index.sales.shipping.origin.title',
