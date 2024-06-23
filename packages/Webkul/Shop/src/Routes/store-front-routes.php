@@ -1,6 +1,8 @@
 <?php
 
+use App\Mail\SubscriptionDone;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;
@@ -29,14 +31,28 @@ Route::group(['middleware' => ['locale', 'theme', 'currency']], function () {
         return view('shop::cms.about');
     });
 
-
-
     Route::get('subscribe/', function () {
-        return view('shop::cms.subscription');
-    })->middleware(['customer']);
+        if (auth()->guard()->check()) {
+            $user = auth()->guard()->user();
+            $userData = [
+                'isloggedin' => true,
+                'name' => $user->first_name,
+                'subscription_amount' => $user->subscription_amount,
+                'subscription_months' => $user->subscription_months,
+                'subscription_start_date' => $user->subscription_start_date,
+                'subscription_end_date' => $user->subscription_end_date,
+            ];
+        } else {
+            $userData = [
+                'isloggedin' => false
+            ];
+        }
+        return view('shop::cms.subscription', compact('userData'));
+    })->name('subscribe');
 
     Route::post('subscribe/payment', function (Request $request) {
         $api = new Api(core()->getConfigData('sales.payment_methods.razorpay.key_id'), core()->getConfigData('sales.payment_methods.razorpay.secret'));
+        // $api = new Api('rzp_test_RDOPLQwIejzW0i', 'IF71wW0z1HCkFxKzU7EW2doO');
         $amount = $request->input('amount');
         $plan = $request->input('plan');
         $orderData = [
@@ -49,43 +65,31 @@ Route::group(['middleware' => ['locale', 'theme', 'currency']], function () {
         return response()->json([
             'orderId' => $order['id'],
             'razorpayKey' => core()->getConfigData('sales.payment_methods.razorpay.key_id'),
+            // 'razorpayKey' => 'rzp_test_RDOPLQwIejzW0i',
             'amount' => $orderData['amount'],
             'currency' => $orderData['currency'],
         ]);
-    })->name('subscribe/payment');
+    })->name('subscribe/payment')->middleware(['customer']);
 
     Route::post('/subscribe/update', function (Request $request) {
         $paymentId = $request->input('razorpay_payment_id');
-        $amount = $request->input('amount'); 
-        $subscriptionMonths = $request->input('subscription_months'); 
-        $customerId = auth()->user()->id; 
+        $amount = $request->input('amount');
+        $subscriptionMonths = $request->input('subscription_months');
+        $customerId = auth()->guard()->user()->id;
         $customer = Customer::find($customerId);
         $subscriptionStartDate = now()->toDateTimeString(); // Current date and time
         $subscriptionEndDate = now()->addMonths($subscriptionMonths)->toDateTimeString();
-        $customer->is_subscribed = true;
+        $customer->is_subscribed = 1;
         $customer->subscription_amount = $amount;
         $customer->subscription_months = $subscriptionMonths;
         $customer->subscription_start_date = $subscriptionStartDate;
         $customer->subscription_end_date = $subscriptionEndDate;
         $customer->razorpay_payment_id = $paymentId;
         $customer->save();
+        Mail::queue(new SubscriptionDone($customer));
         return response()->json(true);
-
     })->name('subscribe/update');
 
-    Route::post('/payment/callback', function () {
-        $success = true; // Check payment success or failure logic here
-
-        if ($success) {
-            echo "done";
-        } else {
-            echo "fail";
-        }
-    })->name('payment.callback');
-
-
-    // ->name('shop.cms.page')
-    // ->middleware('cacheResponse');
 
     /**
      * Fallback route.
