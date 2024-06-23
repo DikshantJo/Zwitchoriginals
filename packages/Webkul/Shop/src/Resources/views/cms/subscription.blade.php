@@ -713,7 +713,7 @@
         {{ $userData['name'] }}
         {{ $userData['subscription_amount'] }}
         {{ $userData['subscription_months'] }}
-        {{ $userData['subscription_start_date'] }}
+        {{ date('"F j, Y', strtotime($userData['subscription_start_date']))  }}
         {{ $userData['subscription_end_date'] }}
     @else
         @if (core()->getConfigData('sales.subscription.subscriptiondetails1.active'))
