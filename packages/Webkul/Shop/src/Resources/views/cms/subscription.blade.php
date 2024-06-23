@@ -709,7 +709,7 @@
 
 
     </div>
-    @if ($userData['isloggedin'])
+    @if ($userData['is_subscribed'])
         {{ $userData['name'] }}
         {{ $userData['subscription_amount'] }}
         {{ $userData['subscription_months'] }}
