@@ -10,17 +10,22 @@
     <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 40px">
         We are thrilled to welcome you to Zwitch Originals! Thank you for subscribing to our services. Your support means a lot to us, and we are excited to have you on board.
     </p>
-    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 40px">
+    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 20px">
         Here are the details of your subscription:
-    </br>
-        Subscription Ammount: ₹{{$subscription_amount}}</br>
-        Subscription Plan: {{$subscription_months}} months</br>
-        Subscription Start Date: {{date('"F j, Y', strtotime($subscription_start_date))}}</br>
-        Subscription End Date: {{date('"F j, Y', strtotime($subscription_end_date))}}</br>
     </p>
-    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 40px">
-        Should you have any questions or require assistance with your subscription, feel free to reach out to our customer support team at sales@zwitchoriginals.com.
+    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 10px">
+        Subscription Ammount: ₹{{$subscription_amount}}
     </p>
+    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 10px">
+        Subscription Plan: {{$subscription_months}} months
+    </p>
+    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 10px">
+        Subscription Start Date: {{date('"F j, Y', strtotime($subscription_start_date))}}
+    </p>
+    <p style="font-size: 16px;color: #384860;line-height: 24px;margin-bottom: 10px">
+        Subscription End Date: {{date('"F j, Y', strtotime($subscription_end_date))}}
+    </p>
+   
 
    
 @endcomponent
