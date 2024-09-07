@@ -496,8 +496,8 @@ h1 {
 }
 
 .email-wrapper {
-            max-width: 600px;
-            margin: 20px auto;
+            max-width: 90%;
+            margin: 60px auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -719,9 +719,9 @@ h1 {
                 <p class="email-signature__name">Vishal Prem</p>
                 <p class="email-signature__role">Founder, Zwitch Originals</p>
             </div>
-            <div class="call-to-action">
+            <!-- <div class="call-to-action">
                 <a href="https://yourwebsite.com" class="call-to-action__button">Visit Zwitch Originals</a>
-            </div>
+            </div> -->
         </main>
     </div>
     </div>
