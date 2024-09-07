@@ -495,6 +495,76 @@ h1 {
     width: 100%;
 }
 
+.email-wrapper {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .email-header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #333;
+        }
+        .email-header__title {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+        .email-body {
+            color: #555;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .email-body__subtitle {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .email-body__paragraph {
+            margin-bottom: 15px;
+        }
+        .email-signature {
+            margin-top: 30px;
+            text-align: right;
+            color: #333;
+        }
+        .email-signature__name {
+            font-weight: bold;
+        }
+        .email-signature__role {
+            margin-top: 5px;
+            font-style: italic;
+        }
+        .call-to-action {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .call-to-action__button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .call-to-action__button:hover {
+            background-color: #555;
+        }
+        @media (max-width: 600px) {
+            .email-wrapper {
+                padding: 15px;
+            }
+            .email-header__title {
+                font-size: 24px;
+            }
+            .email-body__subtitle {
+                font-size: 20px;
+            }
+        }
+
 @media screen and (max-width: 700px){
   .box{
     width: 70%;
@@ -628,7 +698,32 @@ h1 {
                     </section>
                 </article>
             </main>
-        </div>        
+        </div> 
+        
+        <div class="email-wrapper">
+        <header class="email-header">
+            <h1 class="email-header__title">Welcome to Zwitch Originals</h1>
+        </header>
+        <main class="email-body">
+            <p class="email-body__paragraph">Where streetwear meets artistry in the most electrifying way!</p>
+            <p class="email-body__paragraph">At Zwitch, we're not just about fashion; we're about self-expression, creativity, and the courage to pursue your dreams.</p>
+            <p class="email-body__paragraph">Hi, my name is Vishal Prem, the founder of ZWITCH ORIGINALS, and I'm here to share with you the journey that led me to this exhilarating intersection of streetwear and art.</p>
+            <p class="email-body__paragraph">For years, I found myself trapped in the corporate grind, navigating the monotony of the nine-to-five routine. Yet, deep within, I harbored a burning passion for art that refused to be extinguished by the demands of the corporate world. I longed to break free from the shackles of conformity and embrace my true calling as a full-time artist.</p>
+            <p class="email-body__paragraph">With determination and a leap of faith, I made the bold decision to leave behind the security of my corporate job and embark on a journey of creative self-discovery. It was a risk, to be sure, but I knew that staying true to my passion was worth every ounce of uncertainty.</p>
+            <p class="email-body__paragraph">As I delved deeper into the world of art, I discovered a newfound sense of liberation and purpose. Every brushstroke, every splash of color, became a canvas for my imagination to run wild. And it was in this creative sanctuary that Zwitch Originals was born – a brand that embodies the spirit of individuality, innovation, and unapologetic self-expression.</p>
+            <p class="email-body__paragraph">Our streetwear collections are more than just garments; they're works of art in their own right, infused with the passion and creativity that fuel our journey. From bold designs and vibrant colors to edgy graphics and unconventional silhouettes, each piece in our collection tells a story – a story of defiance, of resilience, and of the boundless possibilities that arise when you dare to chase your dreams.</p>
+            <p class="email-body__paragraph">So, whether you're a trendsetter, a trailblazer, or simply someone who refuses to be confined by convention, Zwitch Originals invites you to join us on this electrifying journey. Together, let's rewrite the rules, redefine the boundaries, and unleash the artist within.</p>
+            <p class="email-body__paragraph">Thank you for being a part of our story. Here's to embracing the unexpected, embracing the extraordinary, and embracing the magic of Zwitch Originals. It's time to get rid of the Ordinary.</p>
+            <div class="email-signature">
+                <p class="email-signature__closing">Stay bold. Stay original. Stay Zwitched.</p>
+                <p class="email-signature__name">Vishal Prem</p>
+                <p class="email-signature__role">Founder, Zwitch Originals</p>
+            </div>
+            <div class="call-to-action">
+                <a href="https://yourwebsite.com" class="call-to-action__button">Visit Zwitch Originals</a>
+            </div>
+        </main>
+    </div>
     </div>
 
 <!-- 
