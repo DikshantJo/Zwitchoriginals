@@ -136,6 +136,7 @@
                             v-if="! isLoading"
                             class="block w-max py-[11px] px-[43px] bg-navyBlue text-white text-base font-medium rounded-[18px] text-center cursor-pointer max-sm:text-[14px] max-sm:px-[25px] max-sm:mb-[40px]"
                             @click="placeOrder"
+                            style='background: #3e9bd8'
                         >
                             @lang('shop::app.checkout.onepage.summary.place-order')    
                         </button>

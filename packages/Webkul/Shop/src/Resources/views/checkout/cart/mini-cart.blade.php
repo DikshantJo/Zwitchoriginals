@@ -160,7 +160,7 @@
 
                     <!-- Cart Action Container -->
                     <div class="px-[25px]">
-                        <a
+                        <a style='background: #3e9bd8'
                             href="{{ route('shop.checkout.onepage.index') }}"
                             class="block w-full mx-auto m-0 ml-[0px] py-[15px] px-[43px] bg-navyBlue rounded-[18px] text-white text-base font-medium text-center cursor-pointer max-sm:px-[20px]"
                         >

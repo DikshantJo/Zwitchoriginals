@@ -130,7 +130,7 @@
                     {!! view_render_event('bagisto.shop.customers.reset_password_form_controls.after') !!}
 
                     <div class="flex gap-[36px] flex-wrap mt-[30px] items-center">
-                        <button
+                        <button style='background: #3e9bd8'
                             class="primary-button block w-full max-w-[374px] py-[16px] px-[43px] m-0 ml-[0px] mx-auto rounded-[18px] text-[16px] text-center"
                             type="submit"
                         >
