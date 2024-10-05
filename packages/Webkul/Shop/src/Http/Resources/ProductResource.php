@@ -49,6 +49,8 @@ class ProductResource extends JsonResource
             'prices'      => $productTypeInstance->getProductPrices(),
             'price_html'  => $productTypeInstance->getPriceHtml(),
             'avg_ratings' => round($this->reviewHelper->getAverageRating($this)),
+            'is_stockable' => $productTypeInstance->isStockable(),
+            'in_stock' => $productTypeInstance->totalQuantity(),
         ];
     }
 }

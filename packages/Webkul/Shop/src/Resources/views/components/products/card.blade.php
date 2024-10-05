@@ -13,7 +13,9 @@
         >
             <div class="relative overflow-hidden group max-w-[291px] max-h-[300px] rounded-[4px]">
                 <a
-                    :href="`{{ route('shop.product_or_category.index', '') }}/${product.url_key}`"
+                    {{-- :href="`{{ route('shop.product_or_category.index', '') }}/${product.url_key}`" --}}
+                    :href="product.is_stockable && product.in_stock > 0 ? `{{ route('shop.product_or_category.index', '') }}/${product.url_key}` : 'javascript:void(0)'"
+
                     :aria-label="product.name + ' '"
                 >
                     <x-shop::media.images.lazy
@@ -60,13 +62,16 @@
                             >
                             </span>
                         @endif
-
-                        <button
+                       
+                       <span>
+                        <button  v-if="product.is_stockable && product.in_stock > 0 "
                             class="absolute bottom-[15px] left-[50%] py-[11px] px-[43px] bg-white rounded-xl text-navyBlue text-xs w-max font-medium cursor-pointer -translate-x-[50%] translate-y-[54px] group-hover:translate-y-0 transition-all duration-300"
                             @click="addToCart()"
                         >
-                            @lang('shop::app.components.products.card.add-to-cart')
+                            @lang('shop::app.components.products.card.add-to-cart') 
                         </button>
+                        <button  disabled v-else class="absolute bottom-[15px] left-[50%] py-[11px] px-[43px] bg-white rounded-xl text-navyBlue text-xs w-max font-medium cursor-pointer -translate-x-[50%] translate-y-[54px] group-hover:translate-y-0 transition-all duration-300">Out of Stock</button>
+                    </span>
                     </div>
                 </div>
             </div>
@@ -95,7 +100,12 @@
             v-else
         >
             <div class="relative max-w-[250px] max-h-[258px] overflow-hidden group"> 
-                <a :href="`{{ route('shop.product_or_category.index', '') }}/${product.url_key}`">
+                <a 
+                {{-- :href="`{{ route('shop.product_or_category.index', '') }}/${product.url_key}`" --}}
+                :href="product.is_stockable && product.in_stock > 0 ? `{{ route('shop.product_or_category.index', '') }}/${product.url_key}` : 'javascript:void(0)'"
+
+                >
+                    
                     <x-shop::media.images.lazy
                         class="min-w-[250px] relative after:content-[' '] after:block after:pb-[calc(100%+9px)] bg-[#F5F5F5] group-hover:scale-105 transition-all duration-300"
                         ::src="product.base_image.medium_image_url"
@@ -173,13 +183,16 @@
                     >
                     </x-shop::products.star-rating>
                 </p>
-            
-                <div 
+                <span>
+                <div   v-if="product.is_stockable && product.in_stock > 0 "
                     class="primary-button px-[30px] py-[10px] whitespace-nowrap"
                     @click="addToCart()"
                 >
                     @lang('shop::app.components.products.card.add-to-cart')
                 </div> 
+                <div  class="primary-button px-[30px] py-[10px] whitespace-nowrap" v-else>Out of stock</div>
+            </span>
+            
             </div> 
         </div>
     </script>
