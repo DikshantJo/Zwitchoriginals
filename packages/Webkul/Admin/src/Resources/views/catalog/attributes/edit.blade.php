@@ -235,8 +235,11 @@
                                             :list="optionsData"
                                             item-key="id"
                                         >
-                                            <template #item="{ element, index }" v-show="! element.isDelete">
-                                                <x-admin::table.thead.tr class="text-center hover:bg-gray-50 dark:hover:bg-gray-950">
+                                            <template #item="{ element, index }">
+                                                <tr
+                                                    class="text-center hover:bg-gray-50 dark:hover:bg-gray-950"
+                                                    :style="{ display: element.isDelete ? 'none' : '' }"
+                                                >
                                                     <input
                                                         type="hidden"
                                                         :name="'options[' + element.id + '][isNew]'"
@@ -338,7 +341,7 @@
                                                         >
                                                         </span>
                                                     </x-admin::table.td>
-                                                </x-admin::table.thead.tr>
+                                                </tr>
                                             </template>
                                         </draggable>
                                     </x-admin::table>
@@ -1058,7 +1061,7 @@
                         let foundIndex = this.optionsData.findIndex(item => item.id === id);
 
                         if (foundIndex !== -1) {
-                            this.optionsData.splice(foundIndex, 1);
+                            this.optionsData[foundIndex].isDelete = true;
                         }
                     },
 
