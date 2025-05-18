@@ -45,9 +45,28 @@ class OrderController extends Controller
      */
     public function view($id)
     {
-        $order = $this->orderRepository->findOrFail($id);
+        try {
+            $order = $this->orderRepository->findOrFail($id);
 
-        return view('admin::sales.orders.view', compact('order'));
+            // Check for required relationships
+            if (!$order->billing_address) {
+                throw new \Exception('Order billing address is missing.');
+            }
+
+            if (!$order->payment) {
+                throw new \Exception('Order payment information is missing.');
+            }
+
+            if (!$order->items || $order->items->isEmpty()) {
+                throw new \Exception('Order items are missing.');
+            }
+
+            return view('admin::sales.orders.view', compact('order'));
+        } catch (\Exception $e) {
+            session()->flash('error', $e->getMessage());
+            
+            return redirect()->route('admin.sales.orders.index');
+        }
     }
 
     /**

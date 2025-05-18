@@ -396,4 +396,22 @@ class OrderRepository extends Repository
             ? $orderOrId
             : $this->findOrFail($orderOrId);
     }
+
+    public function findOrFail($id, $columns = ['*'])
+    {
+        $this->applyCriteria();
+        $this->applyScope();
+        
+        $model = $this->model->with([
+            'items',
+            'addresses',
+            'payment',
+            'customer',
+            'channel'
+        ])->findOrFail($id, $columns);
+        
+        $this->resetModel();
+
+        return $this->parserResult($model);
+    }
 }
