@@ -404,6 +404,7 @@ class OrderRepository extends Repository
         
         $model = $this->model->with([
             'items',
+            'items.product',
             'addresses',
             'payment',
             'customer',

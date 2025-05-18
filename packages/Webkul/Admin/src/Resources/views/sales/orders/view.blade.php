@@ -171,7 +171,7 @@
                                             @endif
 
                                             <p class="text-gray-600 dark:text-gray-300">
-                                                @lang('admin::app.sales.orders.view.sku', ['sku' => $item->sku])
+                                                @lang('admin::app.sales.orders.view.sku', ['sku' => Webkul\Product\Helpers\ProductType::hasVariants($item->type) ? ($item->child?->sku ?? '') : ($item->sku ?? '')])
                                             </p>
 
                                             <p class="text-gray-600 dark:text-gray-300">
@@ -405,7 +405,7 @@
                                 {!! view_render_event('sales.order.customer_email.after', ['order' => $order]) !!}
 
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    @lang('admin::app.sales.orders.view.customer-group') : {{ $order->is_guest ? core()->getGuestCustomerGroup()?->name : ($order->customer->group->name ?? '') }}
+                                    @lang('admin::app.sales.orders.view.customer-group') : {{ $order->is_guest ? core()->getGuestCustomerGroup()?->name : ($order->customer?->group?->name ?? '') }}
                                 </p>
 
                                 {!! view_render_event('sales.order.customer_group.after', ['order' => $order]) !!}

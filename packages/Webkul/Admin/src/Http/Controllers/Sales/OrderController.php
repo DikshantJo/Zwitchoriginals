@@ -47,20 +47,6 @@ class OrderController extends Controller
     {
         try {
             $order = $this->orderRepository->findOrFail($id);
-
-            // Check for required relationships
-            if (!$order->billing_address) {
-                throw new \Exception('Order billing address is missing.');
-            }
-
-            if (!$order->payment) {
-                throw new \Exception('Order payment information is missing.');
-            }
-
-            if (!$order->items || $order->items->isEmpty()) {
-                throw new \Exception('Order items are missing.');
-            }
-
             return view('admin::sales.orders.view', compact('order'));
         } catch (\Exception $e) {
             session()->flash('error', $e->getMessage());
