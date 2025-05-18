@@ -1,7 +1,7 @@
 @props(['options'])
 
 <v-carousel>
-    <div class="shimmer w-full aspect-[2.743/1] carouselImageShadow">
+    <div class="shimmer w-full aspect-[2.743/1] max-sm:h-[45vh] carouselImageShadow">
     </div>
 </v-carousel>
 
@@ -17,7 +17,7 @@
                 aria-label="Image Slide "
             >
                 <x-shop::media.images.lazy
-                    class="w-full aspect-[2.743/1] carouselImage" style='object-fit:cover;'
+                    class="w-full aspect-[2.743/1] max-sm:h-[45vh] max-sm:aspect-auto carouselImage" style='object-fit:cover;'
                     ::src="image.image"
                     ::srcset="image.image + ' 1920w, ' + image.image.replace('storage', 'cache/large') + ' 1280w,' + image.image.replace('storage', 'cache/medium') + ' 1024w, ' + image.image.replace('storage', 'cache/small') + ' 525w'"
                     alt=""
@@ -117,6 +117,18 @@
 
             to {
                 opacity: 1
+            }
+        }
+
+        @media (max-width: 525px) {
+            .carouselImage {
+                height: 45vh !important;
+                aspect-ratio: auto !important;
+            }
+            
+            .carouselImageShadow {
+                height: 45vh !important;
+                aspect-ratio: auto !important;
             }
         }
     </style>
