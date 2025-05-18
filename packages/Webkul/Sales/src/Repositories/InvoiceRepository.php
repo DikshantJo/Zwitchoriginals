@@ -51,12 +51,37 @@ class InvoiceRepository extends Repository
      */
     public function create(array $data, $invoiceState = null, $orderState = null)
     {
+        // Validate required data before starting transaction
+        if (!isset($data['order_id'])) {
+            throw new \Exception('Order ID is required for invoice creation.');
+        }
+
+        $order = $this->orderRepository->find($data['order_id']);
+
+        if (!$order) {
+            throw new \Exception('Order not found.');
+        }
+
+        if (!isset($data['invoice']['items']) || empty($data['invoice']['items'])) {
+            throw new \Exception('Invoice items are required.');
+        }
+
+        if (!$order->billing_address) {
+            throw new \Exception('Order billing address is required.');
+        }
+
+        if (!$this->haveProductToInvoice($data)) {
+            throw new \Exception('No products available to invoice.');
+        }
+
+        if (!$this->isValidQuantity($data)) {
+            throw new \Exception('Invalid quantity specified for one or more items.');
+        }
+
         DB::beginTransaction();
 
         try {
             Event::dispatch('sales.invoice.save.before', $data);
-
-            $order = $this->orderRepository->find($data['order_id']);
 
             $totalQty = array_sum($data['invoice']['items']);
 

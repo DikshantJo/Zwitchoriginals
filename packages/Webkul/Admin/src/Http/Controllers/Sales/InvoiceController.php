@@ -78,37 +78,43 @@ class InvoiceController extends Controller
      */
     public function store($orderId)
     {
-        $order = $this->orderRepository->findOrFail($orderId);
+        try {
+            $order = $this->orderRepository->findOrFail($orderId);
 
-        if (! $order->canInvoice()) {
-            session()->flash('error', trans('admin::app.sales.invoices.create.creation-error'));
+            if (! $order->canInvoice()) {
+                session()->flash('error', trans('admin::app.sales.invoices.create.creation-error'));
+
+                return redirect()->back();
+            }
+
+            $this->validate(request(), [
+                'invoice.items.*' => 'required|numeric|min:0',
+            ]);
+
+            if (! $this->invoiceRepository->haveProductToInvoice(request()->all())) {
+                session()->flash('error', trans('admin::app.sales.invoices.create.product-error'));
+
+                return redirect()->back();
+            }
+
+            if (! $this->invoiceRepository->isValidQuantity(request()->all())) {
+                session()->flash('error', trans('admin::app.sales.invoices.create.invalid-qty'));
+
+                return redirect()->back();
+            }
+
+            $this->invoiceRepository->create(array_merge(request()->all(), [
+                'order_id' => $orderId,
+            ]));
+
+            session()->flash('success', trans('admin::app.sales.invoices.create.create-success'));
+
+            return redirect()->route('admin.sales.orders.view', $orderId);
+        } catch (\Exception $e) {
+            session()->flash('error', $e->getMessage());
 
             return redirect()->back();
         }
-
-        $this->validate(request(), [
-            'invoice.items.*' => 'required|numeric|min:0',
-        ]);
-
-        if (! $this->invoiceRepository->haveProductToInvoice(request()->all())) {
-            session()->flash('error', trans('admin::app.sales.invoices.create.product-error'));
-
-            return redirect()->back();
-        }
-
-        if (! $this->invoiceRepository->isValidQuantity(request()->all())) {
-            session()->flash('error', trans('admin::app.sales.invoices.create.invalid-qty'));
-
-            return redirect()->back();
-        }
-
-        $this->invoiceRepository->create(array_merge(request()->all(), [
-            'order_id' => $orderId,
-        ]));
-
-        session()->flash('success', trans('admin::app.sales.invoices.create.create-success'));
-
-        return redirect()->route('admin.sales.orders.view', $orderId);
     }
 
     /**
